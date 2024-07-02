@@ -11,8 +11,8 @@ sources:
 - https://git.sr.ht/~bt/btxx.org
 tasks:
 - build: |
-    cd 1mb-club
-    sudo make build
+    cd btxx.org
+    make build
 - package: |
     cd btxx.org/build
     tar -cvz . > ../../site.tar.gz

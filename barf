@@ -1,0 +1,158 @@
+#!/bin/sh
+
+domain="https://btxx.org"
+
+# Check the operating system
+os_name=$(uname -s)
+
+if [ "$os_name" = "OpenBSD" ]; then
+    alias sed=gsed
+    alias date=gdate
+    alias rsync=openrsync
+elif [ "$os_name" = "Darwin" ]; then
+    alias sed=gsed
+    alias date=gdate
+fi
+
+set -eu
+MARKDOWN=lowdown
+IFS='	'
+
+# Create tab separated file with filename, title, creation date, last update
+index_tsv() {
+	for f in "$1"/*.md
+	do
+		title=$(sed -n '/^# /{s/# //p; q}' "$f")
+		printf '%s\t%s\t%s\t%s\n' "$f" "${title:="No Title"}"
+	done
+}
+
+index_html() {
+	# Print header
+	title=$(sed -n '/^# /{s/# //p; q}' index.md)
+	sed "s/{{TITLE}}/$title/" header.html
+
+	# Intro text
+	$MARKDOWN index.md
+
+	echo "<ul>"
+
+	# Posts
+	while read -r f title created; do
+		link=$(echo "$f" | sed -E 's|.*/(.*).md|\1/|')
+		created=$(echo $(head -3 "$f" | tail -1))
+		echo "<li>$created &middot; <a href=\"$link\">$title</a></li>"
+	done < "$1" | sort -r
+
+	echo "</ul>"
+
+	# Print footer after post list
+	cat footer.html
+}
+
+atom_xml() {
+	uri=$(sed -rn '/atom.xml/ s/.*href="([^"]*)".*/\1/ p' header.html)
+	first_commit_date=$(git log --pretty='format:%ai' . | cut -d ' ' -f1 | tail -1)
+
+	cat <<EOF
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>$(sed -n '/^# /{s/# //p; q}' index.md)</title>
+	<link href="$domain/atom.xml" rel="self" />
+	<updated>$(date +%FT%TZ)</updated>
+	<author>
+		<name>$(git config user.name)</name>
+	</author>
+	<id>$domain,$first_commit_date:default-atom-feed/</id>
+EOF
+
+	while read -r f title created; do
+
+		content=$($MARKDOWN "$f" | sed 's/&/\&amp;/g; s/</\&lt;/g; s/>/\&gt;/g; s/"/\&quot;/g; s/'"'"'/\&#39;/g')
+		post_link=$(echo "$f" | sed -E 's|posts/(.*).md|\1|')
+		basic_date=$(echo $(head -3 "$f" | tail -1))
+		published_date=$(date -d $basic_date -u +%Y-%m-%dT10:%M:%SZ)
+
+		cat <<EOF
+	<entry>
+		<title>$title</title>
+		<content type="html">$content</content>
+		<link href="$domain/$post_link"/>
+		<id>$domain/$post_link</id>
+		<updated>$published_date</updated>
+		<published>$published_date</published>
+	</entry>
+EOF
+	done < "$1"
+
+	echo '</feed>'
+}
+
+rss_xml() {
+	uri=$(sed -rn '/rss.xml/ s/.*href="([^"]*)".*/\1/ p' header.html)
+	first_commit_date=$(git log --pretty='format:%ai' . | cut -d ' ' -f1 | tail -1)
+
+	cat <<EOF
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+	<channel>
+		<title>$(sed -n '/^# /{s/# //p; q}' index.md)</title>
+		<link>$domain/rss.xml</link>
+		<description>Feed description here</description>
+		<lastBuildDate>$(date -u +"%a, %d %b %Y %H:%M:%S %z")</lastBuildDate>
+		<pubDate>$(date -u +"%a, %d %b %Y %H:%M:%S %z")</pubDate>
+		<generator>Custom RSS Generator</generator>
+		<ttl>1800</ttl>
+EOF
+
+	while read -r f title created; do
+		content=$($MARKDOWN "$f" | sed 's/&/\&amp;/g; s/</\&lt;/g; s/>/\&gt;/g; s/"/\&quot;/g; s/'"'"'/\&#39;/g')
+		post_link=$(echo "$f" | sed -E 's|posts/(.*).md|\1|')
+		basic_date=$(echo $(head -3 "$f" | tail -1))
+		published_date=$(date -d "$basic_date" -u +"%a, %d %b %Y %H:%M:%S %z")
+
+		cat <<EOF
+		<item>
+			<title>$title</title>
+			<description>$content</description>
+			<link>$domain/$post_link</link>
+			<guid isPermaLink="false">$domain/$post_link</guid>
+			<pubDate>$published_date</pubDate>
+		</item>
+EOF
+	done < "$1"
+
+	echo '</channel>'
+	echo '</rss>'
+}
+
+write_page() {
+	filename=$1
+	directory=$(echo $(basename "$filename" .md))
+	$(mkdir -p build/$directory)
+	target=$(echo "$filename" | sed -r 's|\w+/(.*).md|build/\1/index.html|')
+	created=$(echo $(head -3 "$filename" | tail -1))
+	title=$2
+
+	$MARKDOWN "$filename" | \
+		cat header.html - |\
+		sed "s|{{TITLE}}|$title|" \
+		> "$target" && cat footer.html >> "$target"
+}
+
+rm -rf build && mkdir build
+
+# Blog posts
+index_tsv posts | sort -rt "	" -k 3 > build/posts.tsv
+index_html build/posts.tsv > build/index.html
+atom_xml build/posts.tsv > build/atom.xml
+rss_xml build/posts.tsv > build/rss.xml
+while read -r f title created; do
+	write_page "$f" "$title" "$created"
+done < build/posts.tsv
+
+# Pages
+index_tsv pages > build/pages.tsv
+while read -r f title created; do
+	write_page "$f" "$title" "$created"
+done < build/pages.tsv

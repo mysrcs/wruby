@@ -1,0 +1,20 @@
+image: alpine/latest
+oauth: pages.sr.ht/PAGES:RW
+packages:
+- rsync 
+- lowdown
+- go
+- hut
+environment:
+site: bt.srht.site
+sources:
+- https://git.sr.ht/~bt/btxx.org
+tasks:
+- build: |
+    cd 1mb-club
+    sudo make build
+- package: |
+    cd btxx.org/build
+    tar -cvz . > ../../site.tar.gz
+- upload: |
+    hut pages publish -d bt.srht.site site.tar.gz

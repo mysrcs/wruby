@@ -24,8 +24,5 @@ That's it. Just a nice, simple baseline to branch off from to avoid "featurism".
 
 Creeping featurism can kill your product and the morale of your team. Avoid it like the plague!
 
-
-## Refs
-
-1. This is easier said than done. Normally you will need to have developed some form of "point system" internally, so you know how to effectively divide features.
-2. *Taking away* complexity, making changes that do not impact workload or reducing the ticket is fine - within reason.
+[^1]: This is easier said than done. Normally you will need to have developed some form of "point system" internally, so you know how to effectively divide features.
+[^2]: *Taking away* complexity, making changes that do not impact workload or reducing the ticket is fine - within reason.

@@ -10,7 +10,7 @@ In case the title of this post didn't make this obvious, my editor of choice is 
 
 The only minor downside is that it isn't *fully* open source. Personally, I think it is well worth buying a license directly from the developers to support their efforts.
 
-If you haven't played around with it yet, I highly recommend giving it a try. At the very least, I guarantee you'll be impressed with the editor's performance and speed! [<#1>]
+If you haven't played around with it yet, I highly recommend giving it a try. At the very least, I guarantee you'll be impressed with the editor's performance and speed! [^1]
 
 ## One Small Problem...
 
@@ -48,8 +48,4 @@ doas ln -s ~/.local/share/flatpak/exports/bin/com.sublimetext.three /usr/bin/sub
 
 Now that those directories are linked, simply open dmenu and start typing `sublimetext`. Done and done. No more terminal commands needed to open Sublime!
 
-- - -
-
-<small>
-1. <span id="1">I am aware that using a terminal-based editor such as vim or emacs would be even *more* efficient. For my own personal use I find more classical "IDE" applications to work best for me.</span>
-</small>
+[^1]: I am aware that using a terminal-based editor such as vim or emacs would be even *more* efficient. For my own personal use I find more classical "IDE" applications to work best for me.

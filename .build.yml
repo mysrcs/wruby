@@ -3,6 +3,7 @@ oauth: pages.sr.ht/PAGES:RW
 packages:
 - rsync 
 - lowdown
+- coreutils
 - go
 - hut
 environment:

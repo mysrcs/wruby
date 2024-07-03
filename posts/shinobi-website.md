@@ -16,11 +16,11 @@ Instead of repeating myself in this post, feel free to read up about the project
 
 [https://shinobi.bt.ht](https://shinobi.bt.ht)
 
-To summarize: by using a simple `shell` script I'm able to render all my plain text files (which is now how I solely write my articles) into a structured RSS 2.0 `xml` file. Subscribers can now consume my posts directly in their RSS reader of choice without the need to directly visit the article's URL.[^0]
+To summarize: by using a simple `shell` script I'm able to render all my plain text files (which is now how I solely write my articles) into a structured RSS 2.0 `xml` file. Subscribers can now consume my posts directly in their RSS reader of choice without the need to directly visit the article's URL.[^1]
 
 ## Why the Change?
 
-I'm a hardcore minimalist at heart and have a tendency to make my own personal projects _leaner_ all the time. I also have been trying my best to find the most refined writing workflow to keep myself posting consistently (and hopefully keeping the quality high). My first iteration towards this step was switching over to hand-coding everything via HTML & CSS[^1]. That worked well - for a very brief time.
+I'm a hardcore minimalist at heart and have a tendency to make my own personal projects _leaner_ all the time. I also have been trying my best to find the most refined writing workflow to keep myself posting consistently (and hopefully keeping the quality high). My first iteration towards this step was switching over to hand-coding everything via HTML & CSS[^2]. That worked well - for a very brief time.
 
 After recently launching the Shinobi project, I kept toying with the idea of switching my personal website over to use the same format. There was a heavy internal debate about ditching HTML in favour of plain text. What kind of impact would this have on both my site and audience? Would people be pissed about yet _another_ radical change?
 
@@ -48,7 +48,7 @@ Feel free to comment below if you have any suggestions! Preferably one that resp
 
 ## Speaking of Comments...
 
-Since the old commenting system[^2] required me to manually add each comment individually, I assumed I would just do the same here. Then I got a hack-y idea. What if I used a mailing list linked through this website's sourcehut project?
+Since the old commenting system[^3] required me to manually add each comment individually, I assumed I would just do the same here. Then I got a hack-y idea. What if I used a mailing list linked through this website's sourcehut project?
 
 It might not be the most user friendly or sustainable but I think it could be an interesting experiment at the very least!
 

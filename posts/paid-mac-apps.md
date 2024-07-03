@@ -46,6 +46,6 @@ URL: [https://panic.com/transmit/](https://panic.com/transmit/)
 
 I know this list only includes 3 applications, but that's truly all the ones I've spent money on. If in the future I happen to purchase any others I will be sure to update this post accordingly.
 
-[^1]: Free &amp; open source software
+[^1]: Free and open source software
 
 

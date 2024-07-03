@@ -33,11 +33,11 @@ Heck, you could even have a fleet of Raspberry Pi devices as your main student "
 
 ## Security
 
-I briefly mentioned user and network security above but figured it deserved its own section. A great deal of push-back comes from stubborn IT professionals[^0] determined to keep things running on Windows - since this is mostly what they are familiar with.
+I briefly mentioned user and network security above but figured it deserved its own section. A great deal of push-back comes from stubborn IT professionals[^1] determined to keep things running on Windows - since this is mostly what they are familiar with.
 
 My mother-in-law was an "at-risk" educator for most of her career. She explained to me that their IT department did a major switch over to use BRAND NEW Apple laptops for all the students just before her retirement. I can't even begin to imagine the cost associated with this change. Not to mention the cost of repair for any of these devices when (not if) damaged.
 
-Who the hell is making these decisions? Even worse, who is approving them?! The school board had the opportunity to switch away from Windows devices and decided on Apple? Education reform is greatly needed[^1].
+Who the hell is making these decisions? Even worse, who is approving them?! The school board had the opportunity to switch away from Windows devices and decided on Apple? Education reform is greatly needed[^2].
 
 
 ## What About The "Job Market"
@@ -56,13 +56,13 @@ Another bonus in using fully open source software is the ability for the student
 
 So what are these "open source" alternatives? Check out my simple suggestions below:
 
-MS Office Suite ==> LibreOffice Suite[^2]
+MS Office Suite ==> LibreOffice Suite[^3]
 
 Photoshop ==> GIMP
 
 Illustrator ==> Inkscape
 
-IE/Edge ==> Firefox[^3]
+IE/Edge ==> Firefox[^4]
 
 Coding IDE (optional) ===> vim
 

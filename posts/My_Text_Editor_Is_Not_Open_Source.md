@@ -55,5 +55,4 @@ I should be very clear about something: this post *is not an advertisement*. I h
 BTW if anyone from SublimeHQ happens to come across this post: PLEASE look into building a "native" version of Sublime Text for FreeBSD/OpenBSD. I (and many others) would be forever grateful!
 
 [^1]: Sublime does mention copyright since 2006...
-
 [^2]: Not the pre-packaged Microsoft version

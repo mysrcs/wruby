@@ -16,7 +16,7 @@ But overtime I came to somewhat dislike[^1] it and set out to change it.
 
 I explain this on my updated [about page](/about) but I will mention it again here:
 
-**tdarb**[^2] is simply my first name and last initial spelt backwards – Brad T. Mind blowing, right?
+tdarb[^2] is simply my first name and last initial spelt backwards – Brad T. Mind blowing, right?
 
 I've switched over to this naming convention to avoid having such a random "phrase" domain name while at the same time having a little more fun than just *mylegalname.com*. I also am a sucker for `.org` TLDs (although I don't know why).
 

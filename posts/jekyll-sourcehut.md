@@ -38,28 +38,29 @@ In order to have your Jekyll site build and push the correct files live, you wil
 
 To make things easier, you can copy the build file below (remember to use your *own* information for usernames, git repo naming etc):
 
-
-    image: debian/stable
-    oauth: pages.sr.ht/PAGES:RW
-    packages:
-    - ruby-full
-    - ruby-dev
-    environment:
-    site: yourusername.srht.site
-    sources:
-    - https://git.sr.ht/~yourusername/your-repo-name
-    tasks:
-    - install-bundler: |
-        sudo gem install bundler
-    - build: |
-        cd your-repo-name
-        bundle install
-        bundle exec jekyll build
-    - package: |
-        cd your-repo-name/_site
-        tar -cvz . > ../../site.tar.gz
-    - upload: |
-        acurl -f https://pages.sr.ht/publish/$site -Fcontent=@site.tar.gz
+~~~sh
+image: debian/stable
+oauth: pages.sr.ht/PAGES:RW
+packages:
+- ruby-full
+- ruby-dev
+environment:
+site: yourusername.srht.site
+sources:
+- https://git.sr.ht/~yourusername/your-repo-name
+tasks:
+- install-bundler: |
+  sudo gem install bundler
+- build: |
+  cd your-repo-name
+  bundle install
+  bundle exec jekyll build
+- package: |
+  cd your-repo-name/_site
+  tar -cvz . > ../../site.tar.gz
+- upload: |
+  acurl -f https://pages.sr.ht/publish/$site -Fcontent=@site.tar.gz
+~~~
 
 
 Save this file as `.build.yml` and place it in the root directory of your Jekyll source code.
@@ -72,15 +73,17 @@ If you're like me and want to use your own custom domain - have no fear! This pr
 
 First, add a new A Record through your domain provider:
 
-
-    @ IN A 173.195.146.139
+~~~sh
+@ IN A 173.195.146.139
+~~~
 
 
 Then change the following `environment` parameter inside your existing `.build.yml` file:
 
-
-    environment:
-    site: yourcustomdomain.com
+~~~sh
+environment:
+site: yourcustomdomain.com
+~~~
 
 
 And that's it - custom domain set! If you run into any issues check out the [official documentation on custom domains](https://srht.site/custom-domains).
@@ -91,6 +94,6 @@ Hopefully this helps to streamline the process for others to host their static s
 
 Even low-effort support for open-source products (like where you host your static site or FOSS projects) can go a long way. Just some food for thought.
 
-<hr data-content="footnotes">
+---
 
 [^1]: Thanks to [McSinyx](https://cnx.srht.site/) for pointing out that the repo used for creating your website can be named anything (instead of defaulting to your sourcehut username)

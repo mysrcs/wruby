@@ -2,9 +2,9 @@
 
 2022-05-23
 
-In my spare time I've been further tinkering (hopefully for the better) with my humble Shinobi Website[^0] script. The most recent update in `patch-1` came with a solid amount of QoL improvements. If you're interested, I wrote about it on the official Shinobi blog[^1].
+In my spare time I've been further tinkering (hopefully for the better) with my humble Shinobi Website[^1] script. The most recent update in `patch-1` came with a solid amount of QoL improvements. If you're interested, I wrote about it on the official Shinobi blog[^2].
 
-The next feature I wanted to tackle was designing a custom layout for the XML files directly in the browser. I was greatly inspired to create something similar to Len Falken's main directory listing[^2], since that blog was one of the original inspirations for Shinobi. I'm not able to copy what's there though, since our feed builds are quite a bit different.
+The next feature I wanted to tackle was designing a custom layout for the XML files directly in the browser. I was greatly inspired to create something similar to Len Falken's main directory listing[^3], since that blog was one of the original inspirations for Shinobi. I'm not able to copy what's there though, since our feed builds are quite a bit different.
 
 I then proceeded to fall down the XSLT rabbit hole.
 
@@ -19,7 +19,7 @@ My first attempt was to use the available `sort` parameter (in XSL version 1.1+)
     <!-- each individual post's content here -->
 
 
-This did not work as intended. RSS 2.0 requires that the `pubDate` content is set to comply with the RFC-822 date-time[^3], which shinobi handles perfectly fine. The issue came from the XSL `sort` parameter not honoring this setting across all dates. My best guess is that it struggles to properly organize posts from their "month" parameter, so it sets the posts in order of date in what I refer to as "monthly sections".
+This did not work as intended. RSS 2.0 requires that the `pubDate` content is set to comply with the RFC-822 date-time[^4], which shinobi handles perfectly fine. The issue came from the XSL `sort` parameter not honoring this setting across all dates. My best guess is that it struggles to properly organize posts from their "month" parameter, so it sets the posts in order of date in what I refer to as "monthly sections".
 
 If anyone knows why this failed to consistently order the posts via `pubDate`, please let me know using the comment link below. I'm far from an XSLT expert and might have overlooked something painfully obvious!
 
@@ -49,7 +49,7 @@ I've ported these changes over to this blog to perform some "in the wild" testin
 
 [https://pblog.bt.ht/feed.xml](https://pblog.bt.ht/feed.xml)
 
-As for the shinobi project itself, I have not merged these updates into the main master branch (at the time of publishing this article). They can be found sitting on patch-2[^4]. My plan is to get this merged ASAP once a little more real-world testing is finished and I can include a better "setup/install" section for newcomers.
+As for the shinobi project itself, I have not merged these updates into the main master branch (at the time of publishing this article). They can be found sitting on patch-2[^5]. My plan is to get this merged ASAP once a little more real-world testing is finished and I can include a better "setup/install" section for newcomers.
 
 ## Shinobi Updates
 

@@ -21,11 +21,9 @@ These custom self-hosted blogs inspired other developers and designers to create
 
 I also believe this inspired people to write better content instead of opting for clickbait garbage in order to get "featured" or boosted promotion on the main blogging platform. But I don't even think that's the worst to come of this mass-migration to a singular blogging platform.
 
-**All[^2] blogs look identical now.** I'm not sure if that was Medium's intention, but either way I personally think it's horrible. The individual personality of most design and development blogs has been completely stripped away.
+All[^2] blogs look identical now. I'm not sure if that was Medium's intention, but either way I personally think it's horrible. The individual personality of most design and development blogs has been completely stripped away.
 
 Maybe I'm just a salty designer with a narrow-minded, pessimistic view on where our blogging communities seem to be heading - or maybe I just have higher standards.
-
-## Refs
 
 [^1]: the design world of the internet
 [^2]: by "All" I mean the majority

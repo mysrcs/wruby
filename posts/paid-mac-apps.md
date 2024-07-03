@@ -2,7 +2,7 @@
 
 2022-06-29
 
-It's no secret that I am a huge advocate for open source software. A solid chunk of my day-to-day workload is done so via FOSS[^0] systems. I also manage a handful of fun side projects that are normally shipped under either MIT or GPL licensing. But that doesn't mean I still don't enjoy _some_ non-free, proprietary software.
+It's no secret that I am a huge advocate for open source software. A solid chunk of my day-to-day workload is done so via FOSS[^1] systems. I also manage a handful of fun side projects that are normally shipped under either MIT or GPL licensing. But that doesn't mean I still don't enjoy _some_ non-free, proprietary software.
 
 So, I thought I would share my collection of macOS applications that I happily paid for. (There aren't many since my needs are limited)
 
@@ -46,8 +46,6 @@ URL: [https://panic.com/transmit/](https://panic.com/transmit/)
 
 I know this list only includes 3 applications, but that's truly all the ones I've spent money on. If in the future I happen to purchase any others I will be sure to update this post accordingly.
 
-## Refs
-
-1. Free &amp; open source software
+[^1]: Free &amp; open source software
 
 

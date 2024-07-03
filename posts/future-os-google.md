@@ -81,10 +81,7 @@ Testing out Chrome OS with your non-technical friends and family could help redu
 
 I have no crystal ball to see what the future of Chrome OS holds  but it looks pretty promising to me.
 
-
-## Refs
-
-1. "Users" referring to those mainly using their devices for word documents, spread sheets, media consumption, programming, messaging, minor interactivity (no heavy video or production editing)
-2. These updates go unnoticed, compared to that of MacOS or Windows...
-3. Your mileage may vary depending on how much RAM you have on your device
-4. Although, Stadia's current game selection leaves a lot to be desired
+[^1]: "Users" referring to those mainly using their devices for word documents, spread sheets, media consumption, programming, messaging, minor interactivity (no heavy video or production editing)
+[^2]: These updates go unnoticed, compared to that of MacOS or Windows...
+[^3]: Your mileage may vary depending on how much RAM you have on your device
+[^4]: Although, Stadia's current game selection leaves a lot to be desired

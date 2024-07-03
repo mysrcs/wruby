@@ -2,7 +2,7 @@
 
 2022-06-20
 
-With the recent patch to the Shinobi Website project, I thought it would be best to share my experience implementing clickable links inside a rendered XML RSS file directly through a browser. This is made possible thanks to the awesome power of XSL formatting.
+With the recent patch[^1] to the Shinobi Website project, I thought it would be best to share my experience implementing clickable links inside a rendered XML RSS file directly through a browser. This is made possible thanks to the awesome power of XSL formatting.
 
 Before we begin, it should be noted that both Safari for macOS and *all* browsers on iOS do NOT support the ability to render XML files. Instead you are required to download the feeds as static files to your system. Major bummmer. Hopefully this will be fixed in the near future.
 
@@ -40,6 +40,4 @@ In a supported browser, you can see the code in action here: https://pblog.bt.ht
 
 That's really all there is to it.
 
-## Refs
-
-1. https://shinobi.bt.ht/posts/patch-3.txt
+[^1]: https://shinobi.bt.ht/posts/patch-3.txt

@@ -48,8 +48,6 @@ I understand applications will have advanced or "pro" users that have full knowl
 
 As I stated above, try doing a quick design experiment by replacing all your existing iconography in your application with simple text. I assure you that at least you'll discover interesting design flaws in your system.
 
-## Refs
-
-1. By "design" I'm referring to visuals not programming or system engineering
-2. Early software programs did save to an external floppy disk. My point stands that many digital file storage applications copied this iconography blindly.
-3. Not to mention how rampant it is on plain ol' regular websites. If you're hiding five menu items behind a hamburger menu for "mobile users", you're doing it wrong.
+[^1]: By "design" I'm referring to visuals not programming or system engineering
+[^2]: Early software programs did save to an external floppy disk. My point stands that many digital file storage applications copied this iconography blindly.
+[^3]: Not to mention how rampant it is on plain ol' regular websites. If you're hiding five menu items behind a hamburger menu for "mobile users", you're doing it wrong.

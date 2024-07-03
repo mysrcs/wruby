@@ -2,7 +2,7 @@ image: alpine/latest
 oauth: pages.sr.ht/PAGES:RW
 packages:
 - rsync 
-- lowdown
+- markdown
 - coreutils
 - go
 - hut

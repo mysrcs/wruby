@@ -4,7 +4,10 @@
 
 I often stumble upon large data sets or table layouts across the web. When these tables contain hundreds of rows of content, things become problematic once you start to scroll...
 
-[Click here to see standard table headers video](/public/videos/not-fixed-header-tables.mp4)
+<video width="100%" controls="">
+  <source src="/public/videos/not-fixed-header-tables.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
 
 <h2>This should be a header</h2>
 
@@ -14,7 +17,10 @@ Look at that table header disappear! Now, if I scroll all the way down to item #
 
 Check it out:
 
-[Click here to see "fixed" table headers video](/public/videos/fixed-header-tables.mp4)
+<video width="100%" controls="">
+  <source src="/public/videos/fixed-header-tables.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
 
 Pretty awesome, right? It might look like magic but it's actually very easy to implement. You only need to add 2 CSS properties on your `thead`:
 

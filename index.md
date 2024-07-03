@@ -1,4 +1,6 @@
-# Designer, developer, hardware tinkerer, open source advocate, consumer of dark roast coffee, and writer of very long sentences.
+# ~bt
+
+**Designer, developer, hardware tinkerer, open source advocate, consumer of dark roast coffee, and writer of very long sentences.**
 
 As a designer/developer hybrid, I help software companies improve their user experience and ship more performant products. I also actively maintain several [open source projects](/projects).
 

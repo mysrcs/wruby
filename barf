@@ -15,7 +15,7 @@ elif [ "$os_name" = "Darwin" ]; then
 fi
 
 set -eu
-MARKDOWN=lowdown
+MARKDOWN=markdown
 IFS='	'
 
 # Create tab separated file with filename, title, creation date, last update
@@ -41,7 +41,7 @@ index_html() {
 	while read -r f title created; do
 		link=$(echo "$f" | sed -E 's|.*/(.*).md|\1/|')
 		created=$(echo $(head -3 "$f" | tail -1))
-		echo "<li>$created &middot; <a href=\"$link\">$title</a></li>"
+		echo "<li><span>$created</span><a href=\"$link\">$title</a></li>"
 	done < "$1" | sort -r
 
 	echo "</ul>"

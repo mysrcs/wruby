@@ -55,7 +55,4 @@ That's it! Now if I plan to add any new collections down the line, I just need t
 
 Enjoy looping through your Jekyll collections!
 
-
-## Refs
-
-1. Just the sections were statically rendered. All the recipes were pulled in dynamically - I'm not that insane!
+[^1]: Just the sections were statically rendered. All the recipes were pulled in dynamically - I'm not that insane!

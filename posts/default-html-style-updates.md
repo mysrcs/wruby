@@ -86,8 +86,6 @@ There isn't much else to say, really. I think these tiny tweaks would greatly im
     }
 
 
-## Refs
-
-1. `18px` seems to be the perfect sweet spot between "almost too large, yet not small enough to strain my eyes"
-2. At the time of this article's publish date
+[^1]: `18px` seems to be the perfect sweet spot between "almost too large, yet not small enough to strain my eyes"
+[^2]: At the time of this article's publish date
 

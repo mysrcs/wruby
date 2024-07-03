@@ -48,10 +48,7 @@ I still have ownership of the old domain for almost another full year. I feel li
 
 I don't have much else to report besides having made minor tweaks to this website design (yet again) and I have also finally added a picture of [workstation on the "Things I Use" page](/uses). That's it.
 
-
-## Refs
-
-1. not *hate* - just discontent
-2. pronounced tee-darb
-3. Namecheap support were very helpful - this was more of a limitation of what their redirects can do
+[^1]: not *hate* - just discontent
+[^2]: pronounced tee-darb
+[^3]: Namecheap support were very helpful - this was more of a limitation of what their redirects can do
 

@@ -48,8 +48,6 @@ I might have attacked the overall Linux desktop experience in favor of macOS a l
 
 I just don't *love* it.
 
-## Refs
-
-1. People swear by CUPS working well on Linux, but this has caused issues for me in the past as well. Unsure why macOS handles it fine...
-2. Depending on the desired distro, resources required, etc.
-3. A couple that come to mind are Zorin OS and elementary OS
+[^1]: People swear by CUPS working well on Linux, but this has caused issues for me in the past as well. Unsure why macOS handles it fine...
+[^2]: Depending on the desired distro, resources required, etc.
+[^3]: A couple that come to mind are Zorin OS and elementary OS

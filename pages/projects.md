@@ -6,14 +6,14 @@
 * [Vanilla CSS](https://vanillacss.com): A minimal baseline stylesheet for any web project
 * [Web Audit](https://audit.bt.ht): Detailed checklist audit for developing websites
 * [Normform](https://normform.netlify.app): Minimal CSS form plugin (6KB)
-* [23 Tales](https://23tales.netlify.app): Online collection of works by Beatrix Potter
+* [The 23 Tales Project](https://23tales.netlify.app): Online collection of works by Beatrix Potter
 * [Shinobi](https://shinobi.bt.ht): Text-based, RSS focused blogging "system"
 * [pblog](https://pblog.bt.ht): Pandoc static blog generator
 * [Light Speed](https://ls.bt.ht): Jekyll theme with a perfect Lighthouse score
 
 ## Clubs
-* [1MB Club](https://1mb.club): A collection of web pages weighing less than 1 megabyte
-* [1kB Club](https://1kb.club): A collection of web pages weighing less than 1 kilobyte
+* [The 1MB Club](https://1mb.club): A collection of web pages weighing less than 1 megabyte
+* [The 1kB Club](https://1kb.club): A collection of web pages weighing less than 1 kilobyte
 * [XHTML Club](https://xhtml.club) A collection of HTML-focused websites
 
 ## Installers / Setups

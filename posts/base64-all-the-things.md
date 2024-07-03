@@ -4,25 +4,25 @@
 
 *An extremely overlooked process for displaying fonts*, images, documents, spreadsheets, etc. on the web is the use of **base64 encoding**. Although it may not be the most efficient (or easy) way to display and include these elements it can be a lifesaver in certain situations.
 
-<h2>What is base64 encoding?</h2>
-<p>It might be common knowledge, but I think breaking down exactly what base64 encoding is could be very helpful to beginner web developers:</p>
-<blockquote>
-  <p>Base64 is a group of binary-to-text encoding schemes that represent binary data in an ASCII string format by translating it into a radix-64 representation.</p>
-  <cite>- Wikipedia</cite>
-</blockquote>
-<p>In simpler terms: it is a encoded format that can change an element like this:</p>
+## What is base64 encoding?
 
+It might be common knowledge, but I think breaking down exactly what base64 encoding is could be very helpful to beginner web developers:
 
-    <img src="/path/to/image.webp" alt="Cool image">
+> Base64 is a group of binary-to-text encoding schemes that represent binary data in an ASCII string format by translating it into a radix-64 representation.
 
+In simpler terms: it is a encoded format that can change an element like this:
+
+```html
+<img src="/path/to/image.webp" alt="Cool image">
+```
 
 Into this:
 
+```html
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABkAAAASwCAYAA...PnyMAAAAASUVORK5CYII=" alt="Cool image">
+```
 
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABkAAAASwCAYAA...PnyMAAAAASUVORK5CYII=" alt="Cool image">
-
-
-<h2>See it in action</h2>
+## See it in action
 
 <figure>
 <img src="https://cdn.dribbble.com/users/29329/screenshots/9072216/media/0137ce6b6a5fa89d729ac9e4d488f002.png" alt="Just an image">
@@ -35,29 +35,26 @@ Into this:
 </figure>
 
 
-<h2>Should I use base64?</h2>
+## Should I use base64?
 
-<p>That completely depends on the situation. For most regular day-to-day web development - <b>probably not</b>. While base64 is useful, it is slightly less per-formant than directly using a source file (though, one could argue that making the extra browser request is less per-formant as well).</p>
-<p>But that doesn't mean there aren't a few edge cases.</p>
+That completely depends on the situation. For most regular day-to-day web development - probably not. While base64 is useful, it is slightly less per-formant than directly using a source file (though, one could argue that making the extra browser request is less per-formant as well).
 
-<ul>
-  <li>The speed of rendering the encoding out-performs the extra HTTP request</li>
-  <li>You only have access to a single set of specific HTML files (no access to current font, CSS or image directories)</li>
-  <li>Security issues that limit your ability to use external sources altogether</li>
-</ul>
+But that doesn't mean there aren't a few edge cases.
 
-<h2>How do I encode my files?</h2>
+* The speed of rendering the encoding out-performs the extra HTTP request
+* You only have access to a single set of specific HTML files (no access to current font, CSS or image directories)
+* Security issues that limit your ability to use external sources altogether
 
-<p>There are a ton of freely available encoders out in the wild web, but my personal go-to is <a href="https://www.base64converter.com/">base64converter.com</a>. Simply upload your file and convert.</p>
+## How do I encode my files?
 
-<h2>Limitations</h2>
+There are a ton of freely available encoders out in the wild web, but my personal go-to is <a href="https://www.base64converter.com/">base64converter.com</a>. Simply upload your file and convert.
 
-<ul>
-  <li>Images converted to base64 will be 20-25% larger in size (making for poorer performance on mobile for image-heavy websites)</li>
-  <li>Lacking any consistent use of CDN caching</li>
-  <li>Larger encodings can make for messy project files (unless run at build time of course)</li>
-</ul>
+## Limitations
 
-<p>Though these limitations can be deal-breakers in certain situations, I find it extremely helpful for developers to keep base64 encoding in their back pockets for a rainy day.</p>
+* Images converted to base64 will be 20-25% larger in size (making for poorer performance on mobile for image-heavy websites)
+* Lacking any consistent use of CDN caching
+* Larger encodings can make for messy project files (unless run at build time of course)
+
+Though these limitations can be deal-breakers in certain situations, I find it extremely helpful for developers to keep base64 encoding in their back pockets for a rainy day.
 
 

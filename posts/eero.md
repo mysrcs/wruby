@@ -132,7 +132,5 @@ None of this stuff if groundbreaking, but my hope is that even one person across
 
 Best of luck blocking those pesky ads and trackers!
 
-## Refs
-
-1. You don't *have* to use your Eero gateway for this step (credit: [/u/RollMeAway83](https://old.reddit.com/user/RollMeAway83))
-2. Thanks to [u/YankeesIT](https://old.reddit.com/user/YankeesIT) for pointing out that this is required not *optional*
+[^1]: You don't *have* to use your Eero gateway for this step (credit: [/u/RollMeAway83](https://old.reddit.com/user/RollMeAway83))
+[^2]: Thanks to [u/YankeesIT](https://old.reddit.com/user/YankeesIT) for pointing out that this is required not *optional*

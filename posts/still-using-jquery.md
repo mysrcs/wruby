@@ -2,11 +2,11 @@
 
 2019-04-15
 
-I have seen a handful of condescending comments from front-end developers since the newest build of jQuery ([3.4.0](http://blog.jquery.com/2019/04/10/jquery-3-4-0-released/)) released a couple of days ago. While I understand not all developers share the same work-style or are using the same tech-stack, dismissive comments towards any *useful* library comes off as entitled or elitist.
+I have seen a handful of condescending comments from front-end developers since the newest build of ([jQuery 3.4.0](http://blog.jquery.com/2019/04/10/jquery-3-4-0-released/)) released a couple of days ago. While I understand not all developers share the same work-style or are using the same tech-stack, dismissive comments towards any *useful* library comes off as entitled or elitist.
 
 - "Why would you use jQuery nowadays?" 
 - "People are still developing this library?"
-- "Why use jQuery when you can use [insert latest trendy web tech here]".
+- "Why use jQuery when you can use *insert latest trendy web tech here*".
 
 **I still use jQuery**. Well, I may not use the library for all projects since every project is different - but I certainly don't avoid using it solely because "its jQuery". I've always believed in using the best tools for the job.
 

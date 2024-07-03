@@ -15,7 +15,7 @@ Modern browsers give the general public too much credit when it comes to memory 
 
 - "That article had *something* to do with CSS..."
 - "I remember seeing a beautifully designed site a month ago but have no clue what the URL was..."
-- "My browser crashed and I can't recall that [example website] I had pinned in my tab for weeks..."
+- "My browser crashed and I can't recall that *example website* I had pinned in my tab for weeks..."
 
 For reference, let's take a look at the current Chrome (73) history view:
 

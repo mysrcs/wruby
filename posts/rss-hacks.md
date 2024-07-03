@@ -57,10 +57,8 @@ If you're interested in more updates and details about the shinobi project itsel
 
 [https://shinobi.bt.ht/feed.xml](https://shinobi.bt.ht/feed.xml)
 
-## Refs
-
-1. https://shinobi.website/
-2. https://shinobi.website/posts/patch-1.txt
-3. http://len.falken.directory/
-4. https://validator.w3.org/feed/docs/error/InvalidRFC2822Date.html
-5. https://git.sr.ht/~tdarb/shinobi-script/tree/patch-2
+[^1]: https://shinobi.website/
+[^2]: https://shinobi.website/posts/patch-1.txt
+[^3]: http://len.falken.directory/
+[^4]: https://validator.w3.org/feed/docs/error/InvalidRFC2822Date.html
+[^5]: https://git.sr.ht/~tdarb/shinobi-script/tree/patch-2

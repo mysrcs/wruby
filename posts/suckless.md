@@ -65,7 +65,5 @@ Everything *should* work out of the box, but in case it doesn't please [open a t
 
 We'll see how things go. So far I'm enjoying my time with a much simpler desktop and the "forced" push towards getting better with C is an added bonus. I still love Alpine, but Void is slowly winning me over...
 
-## Refs
-
-1. I find this to be the best way to learn new things. Reading technical books are helpful, but concepts never stick with me unless I am forced to implement them.
-2. This is a joke. Alpine is certainly not for everyone. There are many more "fully featured" distros available and everyone should use what they enjoy! Try not to take my blog posts so seriously...
+[^1]: I find this to be the best way to learn new things. Reading technical books are helpful, but concepts never stick with me unless I am forced to implement them.
+[^2]: This is a joke. Alpine is certainly not for everyone. There are many more "fully featured" distros available and everyone should use what they enjoy! Try not to take my blog posts so seriously...

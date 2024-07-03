@@ -56,8 +56,6 @@ Up to this point we haven’t spent a single penny. Unfortunately, web hosting i
 I know – I can hear your collective voices shouting out:
 
 > Isn't web hosting a little expensive just for my simple hobby blog/site?
->
-> -- <cite>Some of you</cite>
 
 I host this test blog for just **$3.88/month** and the service is actually good. Unreal, right? That’s the price of a medium coffee, so I’m pretty sure it won’t break the bank.
 

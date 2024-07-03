@@ -137,12 +137,9 @@ This was an odd edge case. For the most part, the default system cursors worked 
 
 Not to worry though - there is an easy fix!
 
-1. Install [capitaine cursors](https://github.com/keeferrourke/capitaine-cursors):
-    apk add capitaine-cursors
-2. Make a new directory:
-    mkdir -p ~/.icons/capitaine-cursors
-3. Copy the files over: 
-    sudo cp -r /usr/share/icons/capitaine-cursors-dark ~/.icons/capitaine-cursors
+1. Install [capitaine cursors](https://github.com/keeferrourke/capitaine-cursors): `apk add capitaine-cursors`
+2. Make a new directory: `mkdir -p ~/.icons/capitaine-cursors`
+3. Copy the files over: `sudo cp -r /usr/share/icons/capitaine-cursors-dark ~/.icons/capitaine-cursors`
 4. The make your cursor changes using `gnome-tweaks`
 5. Profit!
 
@@ -152,6 +149,4 @@ Overall I'm decently satisfied with my "installer". I've included *just enough* 
 
 Alpine Linux can be more than just a "server distro". My daily driver proves it!
 
-## Refs
-
-1. This is now included in my official installer script, but I originally had to install this manually.
+[^1]: This is now included in my official installer script, but I originally had to install this manually.

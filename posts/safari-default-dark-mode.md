@@ -57,7 +57,5 @@ My hope if that even one Safari design or development team member stumbles acros
 
 Thanks for reading and happy dark mode to you all!
 
-## Refs
-
-1. Special thanks to [Seirdy](https://seirdy.one/) for suggesting the use of :link and :active support. I recommend you check out his take on [dark mode / theme support](https://seirdy.one/2020/11/23/website-best-practices.html#dark-themes).
-2. This has an open ticket through [Webkit Bugzilla](https://bugs.webkit.org/show_bug.cgi?id=209851)
+[^1]: Special thanks to [Seirdy](https://seirdy.one/) for suggesting the use of :link and :active support. I recommend you check out his take on [dark mode / theme support](https://seirdy.one/2020/11/23/website-best-practices.html#dark-themes).
+[^2]: This has an open ticket through [Webkit Bugzilla](https://bugs.webkit.org/show_bug.cgi?id=209851)

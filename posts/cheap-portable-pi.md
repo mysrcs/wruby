@@ -45,7 +45,7 @@ I live in Canada, so some of the options are based on available hardware near my
 > **Note**: I've decided to use a wireless, USB dongle-based keyboard. You can opt to use a bluetooth-based keyboard, but I just find them more trouble than they are worth (keeping a charge, losing connections, interference from other devices)
 
 - SBC: [Raspberry Pi Zero WH](https://amzn.to/3jCVXHG)
-- Storage / OS: [64GB Micro SD Card](https://amzn.to/2GHm01R) (Always have an SD backup!)
+- Storage / OS: [Micro SD Card 64GB](https://amzn.to/2GHm01R) (Always have an SD backup!)
 - Battery HAT: [Li-ion Battery HAT](https://amzn.to/3jGq8xp)
 - Battery: *This depends on your location. I was able to order [online through Walmart](https://www.walmart.ca/en/ip/Brand-New-4-Pcs-2500mAh-TR14500-3-7V-Rechargeable-Li-ion-Battery-for-Flashlight-Torch/PRD3Z73LMZZ3VK9), but if you live in the USA there are plenty of battery-specific vendors available. Find whatever works best for your needs!*
 - Display: [KeDei 3.5-inch TFT Display](https://www.buyapi.ca/product/3-5-inch-raspberry-pi-tft-display/)

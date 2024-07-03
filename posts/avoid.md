@@ -2,7 +2,7 @@
 
 2022-09-08
 
-Everyday a new designer begins their journey into the world of [*insert design industry here*] and it is magical! Having a fresh pair of eyes untainted from the current trends of the time can help improve design as a whole. Newbies can even teach new things to older, grumpier luddites (like yours truly). But over the years I've noticed a concerning trend among junior designers; **they rely too heavily on Dribbble**.
+Everyday a new designer begins their journey into the world of *insert design industry here* and it is magical! Having a fresh pair of eyes untainted from the current trends of the time can help improve design as a whole. Newbies can even teach new things to older, grumpier luddites (like yours truly). But over the years I've noticed a concerning trend among junior designers; **they rely too heavily on Dribbble**.
 
 Relying on Dribbble for minor inspiration is one thing. Referencing "shots" as justification for real-world design work? Not so much. I believe Dribbble shouldn't be used for either of these use cases, but I can at least give a pass at browsing for basic inspiration (colors, padding, layout).
 

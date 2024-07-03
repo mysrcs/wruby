@@ -10,7 +10,7 @@ Users are tired of being bombarded with tracking scripts, having to download mas
 
 > It's in my nature, I always liked **speed**.
 >
-> <cite>- Guy Lafleur<cite>
+> **Guy Lafleur**
 
 ## We can do better
 

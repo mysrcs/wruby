@@ -29,6 +29,4 @@ That's it! Now Netlify will dynamically forward all your pre-existing URLs from 
 
 Hopefully this helps others trying to dynamically redirect their domains without the headache.
 
-## Refs
-
-1. I normally set this up through Github / git hosting
+[^1]: I normally set this up through Github / git hosting

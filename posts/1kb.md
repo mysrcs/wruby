@@ -2,7 +2,7 @@
 
 2022-08-02
 
-I recently launched (another) website club called the [1kB Club](https://1kb.club). Unlike the [1MB Club](https://1mb.club), it isn't as accessible for most modern websites to become official members. Building a website that actually serves useful content while squeezing its page size under 1,024 bytes is no easy feat.
+I recently launched (another) website club called [the 1kB Club](https://1kb.club). Unlike [the 1MB Club](https://1mb.club), it isn't as accessible for most modern websites to become official members. Building a website that actually serves useful content while squeezing its page size under 1,024 bytes is no easy feat.
 
 But it is possible. And I did it myself!
 

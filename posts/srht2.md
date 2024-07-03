@@ -7,14 +7,14 @@ It has taken a little bit longer than I anticipated, but I have finally started 
 ## Ported Projects
 
 - [Vanilla CSS](https://vanillacss.com)
-- [1mb.club](https://1mb.club)
+- [The 1MB Club](https://1mb.club)
 - [pblog](https://pblog.bt.ht)
 - [shinobi](https://shinobi.bt.ht)
 - [Web Audit](https://audit.bt.ht)
 
 ## Still WIP
 
-- [1kb.club](https://1kb.club)
+- [The 1KB Club](https://1kb.club)
 - [phpetite.org](https://phpetite.org)
 
 *Some others are being worked on but have less "popularity"*
@@ -45,7 +45,5 @@ Will I be deleting my GitHub profile outright? Maybe. I'm not sure. For now the 
 
 For those interested, my sourcehut public profile is: [https://sr.ht/~bt/](https://sr.ht/~bt/). Maybe I'll see you on the other side ;)
 
-## Refs
-
-1. I keep an up-to-date document of all the open source software/communities I pay for on [my "Uses" page](/uses) for reference.
-2. Put your pitchforks and torches away - I'm aware that a web-facing UI exists on sourcehut as well!
+[^1]: I keep an up-to-date document of all the open source software/communities I pay for on [my "Uses" page](/uses) for reference.
+[^2]: Put your pitchforks and torches away - I'm aware that a web-facing UI exists on sourcehut as well!

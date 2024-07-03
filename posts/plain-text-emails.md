@@ -24,7 +24,7 @@ Now, I'm not going to sit here and pretend to be some expert on the history of e
 
 I understand that the data being used is currently 16 years old - but not many extensive research studies have been performed (specifically for email-type preference in general)
 
-In 2002<sup>[<a href="#1">1</a>]</sup>, [a small-set survey was run by ClickZ](https://www.clickz.com/real-world-email-client-usage-the-hard-data/47429/) was created to gauge the details of personal email data. The main data we will focus on is the user preference between HTML or plain text formats:
+In 2002[^1], [a small-set survey was run by ClickZ](https://www.clickz.com/real-world-email-client-usage-the-hard-data/47429/) was created to gauge the details of personal email data. The main data we will focus on is the user preference between HTML or plain text formats:
 
 **Do you prefer receiving HTML or text email?**
 
@@ -46,7 +46,7 @@ Since the *No Preference* respondents don't care whether emails they receive are
 - Text only requires less design work for your development team
   - Don't forget about testing all the various email clients too
 
-Add to this that [53% of emails are opened on mobile](https://litmus.com/blog/53-of-emails-opened-on-mobile-outlook-opens-decrease-33) - so any "fancy" marketing email designs need to look great on mobile screens and also take into account slower connections. What looks better and loads faster than simple plain text? 😛
+Add to this [that 53% of emails are opened on mobile](https://litmus.com/blog/53-of-emails-opened-on-mobile-outlook-opens-decrease-33) - so any "fancy" marketing email designs need to look great on mobile screens and also take into account slower connections. What looks better and loads faster than simple plain text? 😛
 
 ## But what about marketing!?
 
@@ -60,12 +60,10 @@ Plain text can certainly have a reputation for looking lazy or cheap, but I feel
 
 > Life is really simple, but we insist on making it complicated.
 >
-> <cite>- Confucius</cite>
+> **Confucius**
 
 That being said, at the end of the day, companies will justify their own reasons to use HTML email templates over plain text. You can't convince everyone. My own personal experience with email template design, along with analyzing some of the data, leaves me to believe that most businesses should default to plain text. At the very least, you should try to convince your team to perform some simple A/B testing with your next email campaign.
 
 The results might just surprise you.
 
-## Refs
-
-1. This is the "latest" detailed survey I could find on email design preference
+[^1]: This is the "latest" detailed survey I could find on email design preference

@@ -31,13 +31,11 @@ Guiding first-timers towards HTML validators let's them rethink their structure 
 
 ## Open source HTML5 badge
 
-Since the W3C doesn't officially produce any badges for HTML5 validation <sup><a href="#1">1</a></sup>, I've gone ahead and open sourced `SVG` and `PNG` versions of a badge based off the current W3C designs. You can check out the Github repo: [HTML5 Valid Badge](https://github.com/bradleytaunt/html5-valid-badge)
+Since the W3C doesn't officially produce any badges for HTML5 validation[^1], I've gone ahead and open sourced `SVG` and `PNG` versions of a badge based off the current W3C designs. You can check out the Github repo: [HTML5 Valid Badge](https://github.com/bradleytaunt/html5-valid-badge)
 
 If you decide to use these badges, be sure to link these images to your valid passing URL ([html5.validator.nu](https://html5.validator.nu)). You can see an example of the link in the footer of this website.
 
 Please feel free to reach out and share your websites / projects that pass as valid HTML and include an HTML valid badge. I'd love to check them out!
 
-## Refs
-
-<sup id="1">1</sup> [Interview with Mike Smith](http://html5doctor.com/html5-check-it-before-you-wreck-it-with-miketm-smith/): "There won't be any proper Valid HTML5 icon forthcoming, so if you'd like to use one in your content, you'll probably need to create one on your own."
+[^1]: [Interview with Mike Smith](http://html5doctor.com/html5-check-it-before-you-wreck-it-with-miketm-smith/): "There won't be any proper Valid HTML5 icon forthcoming, so if you'd like to use one in your content, you'll probably need to create one on your own."
 

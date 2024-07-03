@@ -37,9 +37,6 @@ I appreciate the effort from the DuckDuckGo team. I'm certain this project will 
 
 As it stands now, this feels like something that should be an extension[^2], not a standalone browser.
 
-
-## Refs
-
-1. [https://sensible.com/dont-make-me-think/](https://sensible.com/dont-make-me-think/)
-2. Technically this already exists as a Safari extension [here](https://apps.apple.com/us/app/duckduckgo-privacy-essentials/id1482920575?mt=12)
+[^1]: [https://sensible.com/dont-make-me-think/](https://sensible.com/dont-make-me-think/)
+[^2]: Technically this already exists as a Safari extension [here](https://apps.apple.com/us/app/duckduckgo-privacy-essentials/id1482920575?mt=12)
 

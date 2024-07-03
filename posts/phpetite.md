@@ -24,7 +24,7 @@ Before we get into more details on how everything is built, let's take a quick l
 
 [See all the Pingdom details for yourself](https://tools.pingdom.com/#5e169d6a82000000)
 
-Now the `Page Size` will certainly change as more blog posts are added over time, but if the total webpage size is roughly 230 KB with 89 blog posts, I figure that gives me the ability to add another 200 or so posts before I cross the [1MB threshold](https://1mb.club)
+Now the `Page Size` will certainly change as more blog posts are added over time, but if the total webpage size is roughly 230 KB with 89 blog posts, I figure that gives me the ability to add another 200 or so posts before I cross [the 1MB threshold](https://1mb.club)
 
 I'll deal with how to load in the content more efficiently when that times comes...
 

@@ -56,8 +56,6 @@ It's completely fine to enjoy your own setup and device preferences - I'm not tr
 
 Thanks for reading.
 
-## Refs
-
-1. It helps that I have pretty much zero active accounts across most "popular" social media platforms.
-2. Some of you readers might not have ever experienced the wonders of T9...
-3. I understand that even smart phones can be classified as "computers". I am using this term in the classical sense.
+[^1]: It helps that I have pretty much zero active accounts across most "popular" social media platforms.
+[^2]: Some of you readers might not have ever experienced the wonders of T9...
+[^3]: I understand that even smart phones can be classified as "computers". I am using this term in the classical sense.

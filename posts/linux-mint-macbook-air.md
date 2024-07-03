@@ -27,7 +27,7 @@ We are looking pretty good!
 
 For this setup we will be using the latest, stable version (at this time of writing) of Linux Mint 20 "Ulyana" - Xfce which is 20. You can download the necessary files here: 
 
-- [Linux Mint 20 "Ulyana" - Xfce](https://www.linuxmint.com/edition.php?id=283) [1.8GB]
+- [Linux Mint 20 "Ulyana" - Xfce](https://www.linuxmint.com/edition.php?id=283) 1.8GB
 
 ## Step 2: Flash Linux Mint to USB Stick
 

@@ -68,9 +68,7 @@ Coding IDE (optional) ===> vim
 
 You could easily expand upon these options, but for most elementary school task these are more than enough.
 
-## Refs
-
-1. Not _all_ IT workers in the school system fall into this category. But most of the underlining structure prevents them from changing much.
-2. At least in my country of Canada. I can't speak for others.
-3. `groff` would be my personal suggestion instead, since it helps introduce children into the structure of basic file formatting and "programming". I'll go into greater details about this in another post.
-4. As mentioned in the beginning of the post, I'd even suggest forks of Firefox -> LibreWolf or Pale Moon (if possible)
+[^1]: Not _all_ IT workers in the school system fall into this category. But most of the underlining structure prevents them from changing much.
+[^2]: At least in my country of Canada. I can't speak for others.
+[^3]: `groff` would be my personal suggestion instead, since it helps introduce children into the structure of basic file formatting and "programming". I'll go into greater details about this in another post.
+[^4]: As mentioned in the beginning of the post, I'd even suggest forks of Firefox -> LibreWolf or Pale Moon (if possible)

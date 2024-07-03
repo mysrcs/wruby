@@ -42,8 +42,6 @@ Of course, to our[^2] eyes, this design might look ugly or seem as though the si
 
 Now, back to designing UIs for the web...
 
-## Refs
-
-1. Selected site based on my own personal preference
-2. Referring to current users of the web
+[^1]: Selected site based on my own personal preference
+[^2]: Referring to current users of the web
 

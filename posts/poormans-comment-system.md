@@ -31,7 +31,7 @@ I absolutely love the [solar.lowtechmagazine.com](https://solar.lowtechmagazine.
 
 E-mail. It's just **plain e-mail**.
 
-I've setup a basic `comment-prompt.html` in my `_includes` folder that contains a `mailto` action button[^1]:
+I've setup a basic `comment-prompt.html` in my `_includes` folder that contains a `mailto` action button:
 
 
     <a href="mailto:myemail.com?subject=RE: { { page.title | uri_escape } }">

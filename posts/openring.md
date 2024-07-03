@@ -127,6 +127,4 @@ I won't go into great detail about build script for SourceHut Pages, but feel fr
 
 Happy sharing!
 
-## Refs
-
-1. Well, as dynamic as a static website can be!
+[^1]: Well, as dynamic as a static website can be!

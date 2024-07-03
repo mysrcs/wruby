@@ -8,10 +8,7 @@ The text-align property is fairly well known in the world of CSS, even among tho
 
 The MDN web docs define the `justify` value for `text-align` as such:
 
-<blockquote>
-    <p>The inline contents are justified. Text should be spaced to line up its left and right edges to the left and right edges of the line box, except for the last line.</p>
-    <cite><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align">MDN web docs</a></cite>
-</blockquote>
+> The inline contents are justified. Text should be spaced to line up its left and right edges to the left and right edges of the line box, except for the last line.
 
 ### See it in action
 

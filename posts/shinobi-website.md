@@ -63,8 +63,6 @@ Some may like the concept of reading my new articles in their RSS reader, others
 
 Thanks for taking the time to read my jumbled thoughts.
 
-## Refs
-
-1. Users can _of course_ still visit the individual article `.txt` files in their browser, if they so wish.
-2. https://tdarb.org/blog/my-static-blog-publishing-setup.html
-3. https://tdarb.org/blog/poormans-comment-system.html
+[^1]: Users can _of course_ still visit the individual article `.txt` files in their browser, if they so wish.
+[^2]: https://tdarb.org/blog/my-static-blog-publishing-setup.html
+[^3]: https://tdarb.org/blog/poormans-comment-system.html

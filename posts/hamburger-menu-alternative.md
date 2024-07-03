@@ -116,4 +116,4 @@ That really depends on your project or overall mobile design (I know, such a hel
 
 That's it. I hope I've inspired you to try out sausage links in the near future or at least made you think more deeply about mobile navigation design!
 
-<small>...is anyone else really hungry now?</small>
+...is anyone else really hungry now?

@@ -36,7 +36,7 @@ If my terrible analogy wasn't enough to convince you to implement better perform
 - [Mozilla](https://blog.mozilla.org/metrics/2010/04/05/firefox-page-load-speed-%E2%80%93-part-ii/): Shaving 2.2 seconds off page load time increased downloads by 15.4%
 - [Yahoo](https://www.slideshare.net/stubbornella/designing-fast-websites-presentation/23-1_Create_a_component_library): 400 ms resulted in a 5 to 9% drop in traffic
 
-<small>All data taken from [instant.page](https://instant.page) (which I am a huge fan of &hearts;)</small>
+All data taken from [instant.page](https://instant.page) which I am a huge fan of &hearts;
 
 The fact something as small as 100 ms can have such a profound impact on your bottom-line should be eye-opening. You're leaving money of the table by not tackling even the low-hanging, easy performance wins. You need to start valuing your users' time and stop serving them excessive garbage they never asked for.
 

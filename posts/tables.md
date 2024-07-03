@@ -116,8 +116,8 @@ You could keep the table headings and style them the same as the `tbody` content
 
 Simply put: **accessibility** and **proper semantics**.
 
-Why use a screwdriver when you need a hammer? Sure, you can make that screwdriver look and *almost* work the same as a hammer, but for what purpose? Just use the damn hammer<sup>1</sup>.
+Why use a screwdriver when you need a hammer? Sure, you can make that screwdriver look and *almost* work the same as a hammer, but for what purpose? Just use the damn hammer[^1].
 
 Have fun making your tables responsive!
 
-<small><sup>1</sup> I know, this is a terrible analogy...</small>
+[^1]: I know, this is a terrible analogy...

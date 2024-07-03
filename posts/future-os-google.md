@@ -6,7 +6,7 @@
 
 - - -
 
-Google has created one of the best operating systems designed with the everyday user<sup>1</sup> in mind: [Chrome OS](https://www.google.com/chromebook/chrome-os/). It is undeniably simple, reliable, easy to setup, and ships with several years of support before any form of EOL kicks in. New models have built-in support for the Google Play Store and Android applications, which is helpful for application development and debugging.
+Google has created one of the best operating systems designed with the everyday user[^1] in mind: [Chrome OS](https://www.google.com/chromebook/chrome-os/). It is undeniably simple, reliable, easy to setup, and ships with several years of support before any form of EOL kicks in. New models have built-in support for the Google Play Store and Android applications, which is helpful for application development and debugging.
 
 In addition, Chrome OS devices allow you to run Linux in a separate container alongside the main OS (on supported devices). You can't complain about that!
 

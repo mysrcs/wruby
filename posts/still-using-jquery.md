@@ -23,8 +23,8 @@ I tend to follow these principles when working on a project (with shared equal i
 - simple UI
 - intuitive UX
 
-As long as all of these items are accomplished, I don't care if the project was a direct export from Microsoft Word straight to the web<sup>1</sup>. If it works great, then it works great.
+As long as all of these items are accomplished, I don't care if the project was a direct export from Microsoft Word straight to the web[^1]. If it works great, then it works great.
 
 So use whatever tools make you a happier developer, as long as your projects don't suffer because of them.
 
-<small><sup>1</sup>This would obviously be terrible for development, but its just an extreme example</small>
+[^1]: This would obviously be terrible for development, but its just an extreme example</small>

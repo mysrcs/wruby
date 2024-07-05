@@ -12,15 +12,15 @@ It might be common knowledge, but I think breaking down exactly what base64 enco
 
 In simpler terms: it is a encoded format that can change an element like this:
 
-```html
+~~~html
 <img src="/path/to/image.webp" alt="Cool image">
-```
+~~~
 
 Into this:
 
-```html
+~~~html
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABkAAAASwCAYAA...PnyMAAAAASUVORK5CYII=" alt="Cool image">
-```
+~~~
 
 ## See it in action
 

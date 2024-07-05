@@ -12,17 +12,17 @@ Let's pretend that we have a total tally that pulls in the number of current use
 
 Here we create an empty `h2` tag that will update with the current number of users via js:
 
-```html
+~~~html
 <main>
     <h2 class="total-tally"></h2>
 </main>
-```
+~~~
 
 ### Javascript
 
 You'll have to use your imagination here and assume that the `totalTally` variable pulls in the numbers dynamically via API:
 
-~~~js
+~~~html
 var totalTally = "273,677" /* This would pull something dynamically in prod */
 document.getElementsByClassName("total-tally")[0].innerHTML=totalTally;
 ~~~

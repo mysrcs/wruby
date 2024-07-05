@@ -14,20 +14,20 @@ Getting things to work seamlessly proved a little more challenging. I found the 
 
 First we need to disable [unveil](https://man.openbsd.org/unveil.2) for Chromium. This will allow us to access our system files through [vscode.dev](https://vscode.dev) using the "Open folder..." or "Open file..." commands without issue:
 
-```
+~~~sh
 chrome --disable-unveil
-```
+~~~
 
 Everything should work pretty solid right out the box now - except it doesn't. Syntax highlighting does not work without enabling WASM/WebAssembly. Your experience might be different, but I had to include the following when launching Chromium from the terminal:
 
-```
+~~~sh
 ENABLE_WASM=1 chrome --enable-wasm
-```
+~~~
 
 Success! We can avoid typing out these complex commands everytime we want to launch our editor by setting up an `alias` (in my case via `.zshrc`):
 
-```
+~~~sh
 alias vscode="ENABLE_WASM=1 chrome --enable-wasm --disable-unveil"
-```
+~~~
 
 That's it! Now I can just pop open VSCode on OpenBSD by simply running `vscode` in my terminal. Hopefully this can help others slowly transition over to OpenBSD - which you should do because it is amazing!

@@ -81,9 +81,9 @@ Since *actual* data speaks louder than anecdotal chit-chat, I performed a very s
 
 First, clear the cache to avoid conflicting data:
 
-```
+~~~sh
 sync; echo 3 | sudo tee /proc/sys/vm/drop_caches
-```
+~~~
 
 ### Write
 

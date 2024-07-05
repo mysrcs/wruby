@@ -16,9 +16,9 @@ Next, locate the email patch in Evolution and right-click on it. Select "Save as
 
 Now simply open your terminal, navigate to your project and run:
 
-```
+~~~sh
 git am <path-to-patches-folder>/<patch-filename>.mbox
-```
+~~~
 
 This should apply the patch directly to your project without issue. You are now free to test these changes locally. If everything looks good, you're able to instantly push these changes remotely.
 

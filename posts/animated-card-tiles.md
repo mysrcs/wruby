@@ -21,16 +21,16 @@ For the base skeleton of these cards we only need:
 - the inner child element that will display on `:hover`
 - proper `h4` and `p` tags inside that child element
 
-
-    <div class="card-tiles-container">
-        <div class="card-tile">
-            <div class="text-content">
-                <h4>Card Title</h4>
-                <p>Inner card content text</p>
-            </div>
-        </div>
+~~~html
+<div class="card-tiles-container">
+  <div class="card-tile">
+    <div class="text-content">
+      <h4>Card Title</h4>
+      <p>Inner card content text</p>
     </div>
-
+  </div>
+</div>
+~~~
 
 That's all that is needed - for now. We will be returning to this code shortly to add some extra classes to make our lives easier.
 

@@ -8,21 +8,21 @@ It is no secret that OpenBSD has poor battery performance on laptops. Although n
 
 I won't go into great detail about `ampd` here - that's what the incredible [documentation is for](https://man.openbsd.org/apmd). You'll want to make sure to start it before trying to configure it:
 
-```
+~~~sh
 doas rcctl start apmd
-```
+~~~
 
 If already running in a live session, you can default to `-A` (auto) but I suggest setting cpu performance to low:
 
-```
+~~~sh
 apm -L
-```
+~~~
 
 To make these changes permanent on boot:
 
-```
+~~~sh
 doas rcctl set apmd flags -L
-```
+~~~
 
 Optimizating battery life via `ampd` will have the most noticable impact but you can improve things even further by implementing some extra "small" performance wins.
 

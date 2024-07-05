@@ -18,23 +18,25 @@ The first step is to create the main repo that would house the core files of `pb
 
 Once your two repos are created, you will need to make some minor edits to the `_config.sh` in the core `pblog` project to tell the build script where the generated files should go (in this case the `pages` repo):
 
-
-    OUTPUT="_output/pages/"
+~~~sh
+OUTPUT="_output/pages/"
+~~~
 
 
 ## The Submodule
 
 Using terminal, navigate to the `_output/` directory in your core `pblog` project. Run the following, remembering to replace the USERNAME parameter with your own:
 
-
-    git submodule add git@codeberg.org:USERNAME/pages.git
-
+~~~sh
+git submodule add git@codeberg.org:USERNAME/pages.git
+~~~
 
 If everything worked correctly you should now have a `.gitmodules` file in your main `pblog` project. If you get any errors, you might need to include the name of the directory at the end of the command:
 
 
-    git submodule add git@codeberg.org:USERNAME/pages.git pages
-
+~~~sh
+git submodule add git@codeberg.org:USERNAME/pages.git pages
+~~~
 
 ## The Workflow
 
@@ -42,9 +44,9 @@ Now you can make changes, add new posts and pages in the main `pblog` project an
 
 Now you can navigate to the standard Codeberg Pages URL to see it in action:
 
-
-    USERNAME.codeberg.page
-
+~~~sh
+USERNAME.codeberg.page
+~~~
 
 If you want to use your own custom domain (who doesn't?) then continue reading.
 
@@ -52,18 +54,18 @@ If you want to use your own custom domain (who doesn't?) then continue reading.
 
 The first thing you will need to do is add a `.domains` file to your `pages` root directory. In this file you will want to list your custom domain on the first line, followed by the standard Codeberg pages URL below it. Like so:
 
-
-    yourcustomdomain.com
-    USERNAME.codeberg.page
-
+~~~sh
+yourcustomdomain.com
+USERNAME.codeberg.page
+~~~
 
 I'm keeping this very basic, but I suggest you look further into the [official documentation](https://docs.codeberg.org/codeberg-pages/#custom-domains) if there are any extra settings you'd like to tinker with.
 
 The final step is configuring a `CNAME` DNS setting through your registrar:
 
-
-    @ -> USERNAME.codeberg.page
-
+~~~sh
+@ -> USERNAME.codeberg.page
+~~~
 
 Give the DNS settings a bit of time to take (24-48 hours) and you'll have your custom domain working just fine.
 

@@ -8,13 +8,14 @@ Setting up all my go-to applications (Sublime, LocalWP, Riot, Evolution, etc) wa
 
 For my own personal reference, I'm also going to include those code snippets here since you never know when you might need it again! And who knows, maybe this will help someone else stumbling around the internet.
 
+~~~sh
+// Volume Up
+pactl set-sink-volume @DEFAULT_SINK@ +5%
 
-    // Volume Up
-    pactl set-sink-volume @DEFAULT_SINK@ +5%
+// Volume Down
+pactl set-sink-volume @DEFAULT_SINK@ -5%
 
-    // Volume Down
-    pactl set-sink-volume @DEFAULT_SINK@ -5%
-
-    // Toggle Mute
-    pactl set-sink-mute @DEFAULT_SINK@ toggle
+// Toggle Mute
+pactl set-sink-mute @DEFAULT_SINK@ toggle
+~~~
 

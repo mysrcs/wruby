@@ -36,12 +36,12 @@ You *could* download one of the many native apps from the Mac App Store to do th
 
 8) Enter the following code below as your script and type `⌘-S` to save (name it something like "Convert to webp")
 
-```
+~~~sh
 for f in "$@"
 do
 /usr/local/bin/cwebp -q 85 "$f" -o "${f%.*}.webp"
 done
-```
+~~~
 
 For visual reference, it should look something like this:
 
@@ -67,9 +67,9 @@ Simple as that!
 
 I was contacted by the very helpful [Kev Quirk](https://kevq.uk) about a minor problem he encountered while following this tutorial. When trying to run `cwebp` he received the following error message:
 
-```
+~~~sh
 cwebp cannot be opened because it's from an unverified developer
-```
+~~~
 
 Doing the next steps seemed to have fixed this issue for him:
 

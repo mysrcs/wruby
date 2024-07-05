@@ -147,11 +147,11 @@ Webfonts
 
 I'm not using any webfonts but instead defaulting to the user's OS System Fonts. I love custom typefaces but performance takes just too much of a hit on my personal site to bother with them.
 
-
-    body {
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif,"Sans Serif",Icons;
-    }
-
+~~~css
+body {
+font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif,"Sans Serif",Icons;
+}
+~~~
 
 For reference, there are some things you should to look out for when using custom typefaces:
 
@@ -170,8 +170,9 @@ On top of that, I decided to also implement Filament Group's <a href="https://gi
 
 My personal site only uses a small amount of JavaScript on the article post Jekyll template pages. By using the <code>defer</code> property I can be sure to load the <code>IntersectionObserver</code> API polyfill after the rest of the DOM as finished loading.
 
-
-    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=IntersectionObserver" defer>
+~~~html
+<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=IntersectionObserver" defer>
+~~~
 
 
 I could probably optimize this further by only calling these scripts if an image is actually present in the article post, but this fits my needs nicely as is.
@@ -182,49 +183,50 @@ The only images I use are those included in supported blog posts, so the first s
 
 <span class="sidenote">I've also included responsive image sizes for further optimization based on screen size and loading speeds.</span>
 
-
-    <figure>
-    <picture
-        <source type="image/webp"
-        data-srcset="
-        /images/articles/webp/flat-design-toggles_p0v2hv_c_scale,w_200.webp 200w,
-        /images/articles/webp/flat-design-toggles_p0v2hv_c_scale,w_1400.webp 1400w"
-        class="lazyload"/>
-        <img
-        sizes="(max-width: 1400px) 100vw, 1400px"
-        data-srcset="
-        /images/articles/flat-design-toggles_qfre51_c_scale,w_200.webp 200w,
-        /images/articles/flat-design-toggles_qfre51_c_scale,w_727.webp 727w,
-        /images/articles/flat-design-toggles_qfre51_c_scale,w_1065.webp 1065w,
-        /images/articles/flat-design-toggles_qfre51_c_scale,w_1400.webp 1400w"
-        src="/images/placeholder.webp"
-        alt="Toggles Comparison"
-        class="lazyload"/>
-    </picture>
-    </figure>
+~~~html
+<figure>
+<picture>
+    <source type="image/webp"
+    data-srcset="
+    /images/articles/webp/flat-design-toggles_p0v2hv_c_scale,w_200.webp 200w,
+    /images/articles/webp/flat-design-toggles_p0v2hv_c_scale,w_1400.webp 1400w"
+    class="lazyload"/>
+    <img
+    sizes="(max-width: 1400px) 100vw, 1400px"
+    data-srcset="
+    /images/articles/flat-design-toggles_qfre51_c_scale,w_200.webp 200w,
+    /images/articles/flat-design-toggles_qfre51_c_scale,w_727.webp 727w,
+    /images/articles/flat-design-toggles_qfre51_c_scale,w_1065.webp 1065w,
+    /images/articles/flat-design-toggles_qfre51_c_scale,w_1400.webp 1400w"
+    src="/images/placeholder.webp"
+    alt="Toggles Comparison"
+    class="lazyload"/>
+</picture>
+</figure>
+~~~
 
 
 What about users with JavaScript disabled I hear you ask? It's time for <code>noscript</code> to save the day:
 
-
-    <noscript>
-        <picture>
-            <source type="image/webp"
-            srcset="
-            /images/articles/webp/flat-design-toggles_p0v2hv_c_scale,w_200.webp 200w,
-            /images/articles/webp/flat-design-toggles_p0v2hv_c_scale,w_1400.webp 1400w">
-            <img
-            sizes="(max-width: 1400px) 100vw, 1400px"
-            srcset="
-            /images/articles/flat-design-toggles_qfre51_c_scale,w_200.webp 200w,
-            /images/articles/flat-design-toggles_qfre51_c_scale,w_727.webp 727w,
-            /images/articles/flat-design-toggles_qfre51_c_scale,w_1065.webp 1065w,
-            /images/articles/flat-design-toggles_qfre51_c_scale,w_1400.webp 1400w"
-            src="/images/articles/flat-design-toggles_qfre51_c_scale,w_1400.webp"
-            alt="Toggles Comparison"/>
-        </picture>
-    </noscript>
-
+~~~html
+<noscript>
+  <picture>
+    <source type="image/webp"
+    srcset="
+    /images/articles/webp/flat-design-toggles_p0v2hv_c_scale,w_200.webp 200w,
+    /images/articles/webp/flat-design-toggles_p0v2hv_c_scale,w_1400.webp 1400w">
+    <img
+    sizes="(max-width: 1400px) 100vw, 1400px"
+    srcset="
+    /images/articles/flat-design-toggles_qfre51_c_scale,w_200.webp 200w,
+    /images/articles/flat-design-toggles_qfre51_c_scale,w_727.webp 727w,
+    /images/articles/flat-design-toggles_qfre51_c_scale,w_1065.webp 1065w,
+    /images/articles/flat-design-toggles_qfre51_c_scale,w_1400.webp 1400w"
+    src="/images/articles/flat-design-toggles_qfre51_c_scale,w_1400.webp"
+    alt="Toggles Comparison"/>
+  </picture>
+</noscript>
+~~~
 
 ### HTTPS &amp; Caching
 

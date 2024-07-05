@@ -67,34 +67,36 @@ I'll save you both the headache and large amount of time I wasted on this silly 
 
 I put the following in my `/etc/xdg/mimeapps.list` (which is included by default with the installer)
 
-    [Default Applications]
-    x-scheme-handler/http=org.qutebrowser.qutebrowser.desktop
-    x-scheme-handler/https=org.qutebrowser.qutebrowser.desktop
-    x-scheme-handler/ftp=org.qutebrowser.qutebrowser.desktop
-    x-scheme-handler/chrome=org.qutebrowser.qutebrowser.desktop
-    text/html=org.qutebrowser.qutebrowser.desktop
-    application/x-extension-htm=org.qutebrowser.qutebrowser.desktop
-    application/x-extension-html=org.qutebrowser.qutebrowser.desktop
-    application/x-extension-shtml=org.qutebrowser.qutebrowser.desktop
-    application/xhtml+xml=org.qutebrowser.qutebrowser.desktop
-    application/x-extension-xhtml=org.qutebrowser.qutebrowser.desktop
-    application/x-extension-xht=org.qutebrowser.qutebrowser.desktop
-    image/bmp=feh.desktop
-    image/gif=feh.desktop
-    image/jpeg=feh.desktop
-    image/jpg=feh.desktop
-    image/png=feh.desktop
-    image/tiff=feh.desktop
-    image/x-bmp=feh.desktop
-    image/x-pcx=feh.desktop
-    image/x-tga=feh.desktop
-    image/x-portable-pixmap=feh.desktop
-    image/x-portable-bitmap=feh.desktop
-    image/x-targa=feh.desktop
-    image/x-portable-greymap=feh.desktop
-    application/pcx=feh.desktop
-    image/svg+xml=feh.desktop
-    image/svg-xml=feh.desktop
+~~~sh
+[Default Applications]
+x-scheme-handler/http=org.qutebrowser.qutebrowser.desktop
+x-scheme-handler/https=org.qutebrowser.qutebrowser.desktop
+x-scheme-handler/ftp=org.qutebrowser.qutebrowser.desktop
+x-scheme-handler/chrome=org.qutebrowser.qutebrowser.desktop
+text/html=org.qutebrowser.qutebrowser.desktop
+application/x-extension-htm=org.qutebrowser.qutebrowser.desktop
+application/x-extension-html=org.qutebrowser.qutebrowser.desktop
+application/x-extension-shtml=org.qutebrowser.qutebrowser.desktop
+application/xhtml+xml=org.qutebrowser.qutebrowser.desktop
+application/x-extension-xhtml=org.qutebrowser.qutebrowser.desktop
+application/x-extension-xht=org.qutebrowser.qutebrowser.desktop
+image/bmp=feh.desktop
+image/gif=feh.desktop
+image/jpeg=feh.desktop
+image/jpg=feh.desktop
+image/png=feh.desktop
+image/tiff=feh.desktop
+image/x-bmp=feh.desktop
+image/x-pcx=feh.desktop
+image/x-tga=feh.desktop
+image/x-portable-pixmap=feh.desktop
+image/x-portable-bitmap=feh.desktop
+image/x-targa=feh.desktop
+image/x-portable-greymap=feh.desktop
+application/pcx=feh.desktop
+image/svg+xml=feh.desktop
+image/svg-xml=feh.desktop
+~~~
 
 You might have also noticed that I use `feh` as my default image viewer as well. That's just my personal preference, feel free to switch that out as you see fit.
 
@@ -114,19 +116,25 @@ Some of these "hacks" or tweaks I had to implement might help others who run int
 
 It is important to install `gawk` since `awk` isn't "real" on Alpine. Once you have that on you system `aerc` will render emails out-of-the-box.[^1]
 
-    apk add gawk
+~~~sh
+apk add gawk
+~~~
 
 ### Sublime Text
 
 Sublime Text requires flatpak, so if that isn't your *thing* then you're better off snagging a different editor. I've tried multiple times throughout my career to use an alternate editor (preferably 100% open source) but keep finding myself returning to Sublime. Maybe one day...
 
-    apk add flatpak
-    flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+~~~sh
+apk add flatpak
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+~~~
 
 
 Then reboot your machine for the changes to take. Login again and run:
 
-    flatpak install flathub com.sublimetext.three
+~~~sh
+flatpak install flathub com.sublimetext.three
+~~~
 
 FYI: You *might* need to run the above commands under `sudo` if your current user lacks proper permissions.
 

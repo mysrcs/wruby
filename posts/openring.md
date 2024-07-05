@@ -12,9 +12,9 @@ So, I thought others might be interested in how I've implemented openring throug
 
 You can pull the project [directly via SourceHut](https://sr.ht/~sircmpwn/openring/) if you wish, but I would recommend installing through your default package manager. I'm running Arch, so for me it was as simple as running:
 
-```
+~~~sh
 yay -S openring
-```
+~~~
 
 That's it. I now have full local access to openring!
 

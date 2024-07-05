@@ -10,27 +10,27 @@
 
 Let's assume with have a single div with the following properties:
 
-
-    div {
-        color: dodgerblue;
-    }
-
+~~~css
+div {
+  color: dodgerblue;
+}
+~~~
 
 If we wanted to use that same color for other properties on elements inside that initial `div`, it's simple - we just need to call `currentColor` like so:
 
+~~~css
+div {
+  color: dodgerblue;
+}
 
-    div {
-        color: dodgerblue;
-    }
-    
-    div header {
-        background-color: currentColor;
-    }
-    
-    div a {
-        border-bottom: 1px solid currentColor;
-    }
+div header {
+  background-color: currentColor;
+}
 
+div a {
+  border-bottom: 1px solid currentColor;
+}
+~~~
 
 **Sidenote**: If you re-declare the default `color` property further along in your CSS, the `currentColor` value will update according to the last color set.
 

@@ -18,7 +18,7 @@ set -eu
 MARKDOWN=kramdown
 IFS='	'
 
-# Create tab separated file with filename, title, creation date, last update
+# Create tab-separated file with filename, title, creation date, last update
 index_tsv() {
 	for f in "$1"/*.md
 	do
@@ -39,7 +39,7 @@ index_html() {
 
 	# Posts
 	while read -r f title created; do
-		link=$(echo "$f" | sed -E 's|.*/(.*).md|\1/|')
+		link=$(echo "$f" | sed -E 's|.*/(.*).md|posts/\1/|')
 		created=$(echo $(head -3 "$f" | tail -1))
 		echo "<li><span>$created</span><a href=\"$link\">$title</a></li>"
 	done < "$1" | sort -r
@@ -67,9 +67,8 @@ atom_xml() {
 EOF
 
 	while read -r f title created; do
-
 		content=$($MARKDOWN "$f" | sed 's/&/\&amp;/g; s/</\&lt;/g; s/>/\&gt;/g; s/"/\&quot;/g; s/'"'"'/\&#39;/g')
-		post_link=$(echo "$f" | sed -E 's|posts/(.*).md|\1|')
+		post_link=$(echo "$f" | sed -E 's|posts/(.*).md|posts/\1|')
 		basic_date=$(echo $(head -3 "$f" | tail -1))
 		published_date=$(date -d $basic_date -u +%Y-%m-%dT10:%M:%SZ)
 
@@ -107,7 +106,7 @@ EOF
 
 	while read -r f title created; do
 		content=$($MARKDOWN "$f" | sed 's/&/\&amp;/g; s/</\&lt;/g; s/>/\&gt;/g; s/"/\&quot;/g; s/'"'"'/\&#39;/g')
-		post_link=$(echo "$f" | sed -E 's|posts/(.*).md|\1|')
+		post_link=$(echo "$f" | sed -E 's|posts/(.*).md|posts/\1|')
 		basic_date=$(echo $(head -3 "$f" | tail -1))
 		published_date=$(date -d "$basic_date" -u +"%a, %d %b %Y %H:%M:%S %z")
 
@@ -129,8 +128,15 @@ EOF
 write_page() {
 	filename=$1
 	directory=$(echo $(basename "$filename" .md))
-	$(mkdir -p build/$directory)
-	target=$(echo "$filename" | sed -r 's|\w+/(.*).md|build/\1/index.html|')
+	if echo "$filename" | grep -q "^posts/"; then
+		# Create a directory under build/posts
+		$(mkdir -p build/posts/$directory)
+		target=$(echo "$filename" | sed -r 's|posts/(.*).md|build/posts/\1/index.html|')
+	else
+		# Create a directory under build for pages
+		$(mkdir -p build/$directory)
+		target=$(echo "$filename" | sed -r 's|pages/(.*).md|build/\1/index.html|')
+	fi
 	created=$(echo $(head -3 "$filename" | tail -1))
 	title=$2
 

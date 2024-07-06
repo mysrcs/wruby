@@ -15,7 +15,7 @@ elif [ "$os_name" = "Darwin" ]; then
 fi
 
 set -eu
-MARKDOWN=kramdown
+MARKDOWN=lowdown
 IFS='	'
 
 # Create tab-separated file with filename, title, creation date, last update
@@ -145,8 +145,6 @@ write_page() {
 		sed "s|{{TITLE}}|$title|" \
 		> "$target" && cat footer.html >> "$target"
 }
-
-rm -rf build && mkdir build
 
 # Blog posts
 index_tsv posts | sort -rt "	" -k 3 > build/posts.tsv

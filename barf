@@ -2,9 +2,6 @@
 
 domain="https://btxx.org"
 
-alias sed=gsed
-alias date=gdate
-
 set -eu
 MARKDOWN=lowdown
 IFS='	'

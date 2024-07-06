@@ -1,9 +1,10 @@
 image: alpine/latest
 oauth: pages.sr.ht/PAGES:RW
 packages:
+- ruby-full
+- ruby-dev
 - rsync
 - coreutils
-- lowdown
 - go
 - hut
 environment:
@@ -11,6 +12,8 @@ site: bt.srht.site
 sources:
 - https://git.sr.ht/~bt/btxx.org
 tasks:
+- install-kramdown: |
+    sudo gem install kramdown
 - build: |
     cd btxx.org
     make build

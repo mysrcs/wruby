@@ -2,17 +2,8 @@
 
 domain="https://btxx.org"
 
-# Check the operating system
-os_name=$(uname -s)
-
-if [ "$os_name" = "OpenBSD" ]; then
-    alias sed=gsed
-    alias date=gdate
-    alias rsync=openrsync
-elif [ "$os_name" = "Darwin" ]; then
-    alias sed=gsed
-    alias date=gdate
-fi
+alias sed=gsed
+alias date=gdate
 
 set -eu
 MARKDOWN=lowdown

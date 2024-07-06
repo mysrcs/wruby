@@ -1,16 +1,22 @@
-image: alpine/latest
+image: openbsd/latest
 oauth: pages.sr.ht/PAGES:RW
 packages:
-- rsync
-- coreutils
-- lowdown
-- go
-- hut
+- coreutils--
+- gsed--
+- cmake--
+- gcc--
+- lowdown--
+- go--
 environment:
 site: bt.srht.site
 sources:
 - https://git.sr.ht/~bt/btxx.org
 tasks:
+- install-hut: |
+    git clone https://git.sr.ht/~xenrox/hut
+    cd hut
+    make
+    doas make install
 - build: |
     cd btxx.org
     make build

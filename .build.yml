@@ -3,7 +3,6 @@ oauth: pages.sr.ht/PAGES:RW
 packages:
 - coreutils
 - rsync
-- lowdown
 - go
 - hut
 environment:
@@ -11,6 +10,11 @@ site: bt.srht.site
 sources:
 - https://git.sr.ht/~bt/btxx.org
 tasks:
+- install-smu: |
+    git clone https://git.sr.ht/~bt/smu
+    cd smu
+    sudo make
+    sudo make install
 - build: |
     cd btxx.org
     make build

@@ -11,9 +11,9 @@ this created by *jacksonchen666*: [These 3 Lines of CSS Will Give You Dark Mode 
 But today I wanted to show how to add dark mode functionality to a website
 without *any CSS at all*.
 
-~~~sh
+```sh
 <meta name="color-scheme" content="dark light">
-~~~
+```
 
 Add that line inside the `head` tags on your HTML files and you're good to go.
 

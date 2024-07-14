@@ -3,7 +3,7 @@
 domain="https://btxx.org"
 
 set -eu
-MARKDOWN=lowdown
+MARKDOWN=smu
 IFS='	'
 
 # Create tab-separated file with filename, title, creation date, last update

@@ -16,7 +16,7 @@ This form isn't going to win any design awards or blow anyone away with its crea
 
 Let's take a look at the HTML of the entire form:
 
-~~~html
+```html
 <form action="">
   <fieldset>
       <legend>Personal Details</legend>
@@ -71,7 +71,7 @@ Let's take a look at the HTML of the entire form:
   <input type="reset" value="Reset">
   <input type="submit" value="Submit">
 </form>
-~~~
+```
 
 Notice the `fieldset` and `legend` elements? I bet you don't see or hear about those HTML items very often. By default, `fieldset` allows sibling or related inputs to be semantically grouped together. The `legend` elements give the user great visual cues about which items are grouped together, helping to focus on each section individually as they complete the form. Use these grouping elements as much as possible (when it makes sense of course) for a better guided experience for your users. 
 
@@ -81,7 +81,7 @@ Avoid making your own custom sections and instead use these existing HTML semant
 
 Now it's time to style this form with only 6 property declarations:
 
-~~~css
+```css
 form label {
   display: block;
 }
@@ -97,7 +97,7 @@ form input[type="reset"],
 form input[type="submit"] {
   width: auto;
 }
-~~~
+```
 
 Of course, you can always add minor adjustments (like in my demo example above)
 

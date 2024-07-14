@@ -26,15 +26,15 @@ Inside this folder you should see something similar to the following structure:
 
 Once saved, open your terminal, navigate to the project you wish to apply this new patch to:
 
-~~~sh
+```sh
 cd my-path/very-cool-project
-~~~
+```
 
 and then run:
 
-~~~sh
+```sh
 git apply ~/Patches/<saved-patches-mailbox-folder>/mbox
-~~~
+```
 
 Congrats! You've successfully applied a git email patch through Apple Mail! Well, kind of. The terminal did most of the *real* work. Just be sure to periodically *purge* your local *Patches* folder to keep things clean!
 

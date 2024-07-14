@@ -12,7 +12,7 @@ My personal, lightweight desktop installer for OpenBSD based on the suckless phi
 
 ## vimrc
 
-~~~sh
+```sh
 " Don't try to be vi compatible
 set nocompatible
 
@@ -113,23 +113,23 @@ let g:solarized_termtrans=1
 " put https://raw.github.com/altercation/vim-colors-solarized/master/colors/solarized.vim
 " in ~/.vim/colors/ and uncomment:
 " colorscheme solarized
-~~~
+```
 
 ## .zshrc extras / aliases
 
-~~~sh
+```sh
 export EDITOR="/bin/vim"
 
 alias suck="sudo rm -rf config.h ; sudo make install"
 alias fixmonitor="xrandr --auto --output eDP1 --mode 1366x768 --below DP2-2"
 alias vscode="alias vscode="ENABLE_WASM=1 chrome --enable-wasm --disable-unveil""
-~~~
+```
 
 ## mimeapps.list
 
 Place this file under  `/usr/share/applications/mimeapps.list`
 
-~~~sh
+```sh
 [Default Applications]
 x-scheme-handler/http=org.qutebrowser.qutebrowser.desktop
 x-scheme-handler/https=org.qutebrowser.qutebrowser.desktop
@@ -145,7 +145,7 @@ application/x-extension-xht=org.qutebrowser.qutebrowser.desktop
 image/jpeg=feh
 image/png=feh
 image/webp=feh
-~~~
+```
 
 ## qutebrowser
 
@@ -155,7 +155,7 @@ All of these scripts should be added under `~/.local/share/qutebrowser/greasemon
 
 #### Auto Skip YouTube Ads
 
-~~~js
+```js
 // ==UserScript==
 // @name         Auto Skip YouTube Ads 
 // @version      1.0.0
@@ -174,53 +174,53 @@ setInterval(() => {
         document.querySelector('video').playbackRate = 10;
     }
 }, 50)
-~~~
+```
 
 ## `ffmpeg` to MP4
 
-~~~sh
+```sh
 ffmpeg -i input_filename.avi -c:v copy -c:a copy -y output_filename.mp4
-~~~
+```
 
 ## Mount USB HDD via CLI
 
-~~~sh
+```sh
 mkdir /media/usb-drive
 mount /dev/sdX /media/usb-drive/
-~~~
+```
 
 ## Run Mullvad on Alpine Linux (Wireguard)
 
-~~~sh
+```sh
 # Install wireguard
 apk add wireguard-tools
-~~~
+```
 
 Login into Mullvad and download the proper wireguard configuration files(s). After downloaded, place in the proper directory:
 
-~~~sh
+```sh
 doas cp <MULLVAD_FILENAME>.conf /etc/wireguard/"
-~~~
+```
 
 Then setup an aliases for easier up/down states:
 
-~~~sh
+```sh
 alias vpnup="doas wg-quick up /etc/wireguard/<MULLVAD_FILENAME>.conf"
 alias vpndown="doas wg-quick down /etc/wireguard/<MULLVAD_FILENAME>.conf"
-~~~
+```
 
 ## Alpine Linux `mini_racer` Tweaks
 
 Gem lockfile:
 
-~~~sh
+```sh
 PLATFORMS
   ruby
   x86_64-linux-musl
 
 mini_racer (0.6.3)
  <remove child dependency>
-~~~
+```
 
 then run: `bundle update mini_racer`
 
@@ -228,65 +228,65 @@ then run: `bundle update mini_racer`
 
 Installing `ghost`
 
-~~~sh
+```sh
 docker pull ghost
-~~~
+```
 
-~~~sh
+```sh
 docker run -d \
     --name ghost-name \
     -e NODE_ENV=development \
     -p 2368:2368 \
     -v $HOME/path/to/ghost/blog:/var/lib/ghost/content \
     ghost:alpine
-~~~
+```
 
 ## MongoDB 3.4 on Ubuntu 23.10
 
-~~~sh
+```sh
 wget http://launchpadlibrarian.net/668089858/libssl1.0.0_1.0.2n-1ubuntu5.13_amd64.deb
 sudo apt install ./libssl1.0.0_1.0.2n-1ubuntu5.13_amd64.deb
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
 
 echo "deb http://repo.mongodb.org/apt/ubuntu precise/mongodb-org/3.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list
-~~~
+```
 
 Now edit `/etc/apt/sources.list.d/mongodb-org-3.4.list`:
 
-~~~sh
+```sh
 deb [trusted=yes] http://repo.mongodb.org/apt/ubuntu precise/mongodb-org/3.4...
-~~~
+```
 
 Then finish things up:
 
-~~~sh
+```sh
 sudo apt-get update --allow-unauthenticated
 sudo apt-get install -y mongodb-org
 
 sudo mkdir -p /data/db
 sudo chmod -R 777 /data/db
-~~~
+```
 
 ## Redis 6.0.7 on Ubuntu 23.10
 
-~~~sh
+```sh
 sudo apt-get install build-essential tcl
 cd /tmp
 curl -O http://download.redis.io/releases/redis-6.0.7.tar.gz
 tar xzvf redis-6.0.7.tar.gz
 cd redis-6.0.7
-~~~
+```
 
 Install redis:
 
-~~~sh
+```sh
 make
 make test
 sudo make install
 
 sudo mkdir /etc/redis
 sudo cp /tmp/redis-6.0.7redis.conf /etc/redis
-~~~
+```
 
 Edit `/etc/redis/redis.conf` with the following changes:
 
@@ -295,7 +295,7 @@ Edit `/etc/redis/redis.conf` with the following changes:
 
 Create systemd unit file for redis: `/etc/systemd/system/redis.service`:
 
-~~~sh
+```sh
 [Unit]
 Description=Redis In-Memory Data Store
 After=network.target
@@ -309,40 +309,40 @@ Restart=always
 
 [Install]
 WantedBy=multi-user.target
-~~~
+```
 
 Final steps:
 
-~~~sh
+```sh
 sudo adduser --system --group --no-create-home redis
 sudo mkdir /var/lib/redis
 sudo chown redis:redis /var/lib/redis
 sudo chmod 770 /var/lib/redis
-~~~
+```
 
 ## Ruby 2.7.2 with rbenv on Ubuntu 23.10
 
 Edit the `/etc/apt/sources.list` file:
 
-~~~sh
+```sh
 deb [trusted=yes] http://security.ubuntu.com/ubuntu bionic-security main
-~~~
+```
 
 Then run `sudo apt-get update`. After completion, install `libssl1.0-dev`:
 
-~~~sh
+```sh
 sudo apt-get install libssl1.0-dev
-~~~
+```
 
 ## Fix screen tearing
 
-~~~sh
+```sh
 sudo micro /etc/X11/xorg.conf.d/20-intel.conf
-~~~
+```
 
 Add the following contents to `20-intel.conf`:
 
-~~~sh
+```sh
 Section "OutputClass"
     Identifier  "Intel Graphics"
     MatchDriver "i915"
@@ -350,17 +350,17 @@ Section "OutputClass"
     Option      "DRI"       "3"
     Option      "TearFree"  "1"
 EndSection
-~~~
+```
 
 ## Enabling "tap to click"
 
-~~~sh
+```sh
 sudo micro /etc/X11/xorg.conf.d/30-touchpad.conf
-~~~
+```
 
 Add the following contents to `30-touchpad.conf`:
 
-~~~sh
+```sh
 Section "InputClass"
     Identifier "touchpad"
     Driver "libinput"
@@ -368,12 +368,12 @@ Section "InputClass"
     Option "Tapping" "on"
     Option "TappingButtonMap" "lmr"
 EndSection
-~~~
+```
 
 ## Woocommerce
 
 **Reset all product menu_order to `0`**
 
-~~~sql
+```sql
 UPDATE wp_posts SET menu_order = 0 WHERE post_type = 'product';
-~~~
+```

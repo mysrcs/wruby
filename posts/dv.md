@@ -6,19 +6,19 @@ I think it's safe to assume most web designers and developers are familiar with 
 
 If I want my `.box` element to take up the entire height of a device's screen:
 
-~~~css
+```css
 .box {
   height: 100vh;
 }
-~~~
+```
 
 Or I want my `.box` element to take up the entire width of a device's screen:
 
-~~~css
+```css
 .box {
   width: 100vw;
 }
-~~~
+```
 
 
 These are wonderful options to have - specifically for those of us designing web applications. But there are some *minor* issues with `vh` and `vw`.
@@ -34,12 +34,12 @@ Lucky for us there exists an awesome *new-ish* CSS API called dynamic viewport-p
 
 So our examples above would translate into:
 
-~~~css
+```css
 .box {
   height: 100dvh;
   width: 100dvw;
 }
-~~~
+```
 
 ### What About Browser Support?
 

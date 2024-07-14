@@ -26,31 +26,31 @@ Don't flash anything just yet! Be sure to use the gear icon and edit the setting
 
 Put the SD card into your Pi, connect power and ethernet. Give it a bit of time to boot up. Once you see a nice solid green LED, go back to your local computer's terminal and enter the following command:
 
-~~~sh
+```sh
 ssh piguard@piguard.local
-~~~
+```
 
 If everything was set up properly you will be asked to trust this device. Next, you will be prompted to enter the device password you setup.
 
 Once you are connected directly to the Pi, it's best to check for updates:
 
-~~~sh
+```sh
 sudo apt update
-~~~
+```
 
 ...and if updates are in fact available, install them via:
 
-~~~sh
+```sh
 sudo apt upgrade
-~~~
+```
 
 ## Installing AdGuard Home
 
 Simply run the automated installer:
 
-~~~sh
+```sh
 curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v
-~~~
+```
 
 Follow the instructions and you'll be setup in no time! To view your AdGuard dashboard at any time, you can now simply navigate to `piguard.local`.
 

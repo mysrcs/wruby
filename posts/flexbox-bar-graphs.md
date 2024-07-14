@@ -29,7 +29,7 @@ The main "secret" of this project is that our graphs are constructed out of HTML
 
 All bases are covered!
 
-~~~html
+```html
 <!-- Using a basic table with our custom data-id -->
 <table data-id="flexbox-bar-graph">
     <caption>Web Performance Results</caption>
@@ -63,7 +63,7 @@ All bases are covered!
         </tr>
     </tbody>
 </table>
-~~~
+```
 
 
 Nothing crazy is happening here - just your standard HTML table structure. The one main thing to notice is the `--data-set` CSS variable placed inline on each data point. This will be important for our CSS to configure the individual bar graphs properly.
@@ -81,7 +81,7 @@ Here we target just our table elements with the `data-id` of `flexbox-bar-graph`
 
 The base `:root` element holds all of our bar graph colors. Change these as you see fit!
 
-~~~css
+```css
 /* Bar Graph color variables */
 :root {
     --bar-color-1: #357EC7;
@@ -90,9 +90,9 @@ The base `:root` element holds all of our bar graph colors. Change these as you 
     --bar-color-4: #7D0541;
     --bar-color-5: #FFD801;
 }
-~~~
+```
 
-~~~css
+```css
 [data-id="flexbox-bar-graph"] {
     border-collapse: collapse;
     margin: 4rem 0 6rem;
@@ -118,7 +118,7 @@ The base `:root` element holds all of our bar graph colors. Change these as you 
 [data-id="flexbox-bar-graph"] tbody td p {
     margin: 0;
 }
-~~~
+```
 
 ### Desktop
 
@@ -127,7 +127,7 @@ Now we set your "visual" bar graphs to show at a set width (in this example it i
 - The `thead tr th:nth-child(x):before` elements create the square "legends" beside each individual data point heading
 - The `tbody tr td:nth-of-type(x) span` elements are the bars themselves
 
-~~~css
+```css
 @media(min-width: 1000px) {
   [data-id="flexbox-bar-graph"] {
     background: transparent;
@@ -250,7 +250,7 @@ Now we set your "visual" bar graphs to show at a set width (in this example it i
     text-align: center;
   }
 }
-~~~
+```
 
 ## Bonus Styling
 
@@ -263,7 +263,7 @@ In the <a target="_blank" href="https://github.com/bradleytaunt/flexbox-bar-grap
 
 The change in CSS is actually quite simple to pull this off - you just need to include the `data-layout` attribute on the table itself.
 
-~~~css
+```css
 [data-layout="horizontal"] tbody {
     min-height: auto;
 }
@@ -296,7 +296,7 @@ The change in CSS is actually quite simple to pull this off - you just need to i
 [data-layout="horizontal"] tbody tr td p {
     margin-left: 10px;
 }
-~~~
+```
 
 
 ## That's All Folks!

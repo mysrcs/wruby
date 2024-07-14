@@ -96,7 +96,7 @@ I will be setting up this "portable pi" via [headless installation](https://www.
   - Next add an empty file named `wpa_supplicant.conf`
 - Open the `wpa_supplicant.conf` file in a code / text editor and paste the following (be sure to change `country` to your proper country code, as well as properly setting your network name / password):
 
-~~~sh
+```sh
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
 country=US
@@ -106,7 +106,7 @@ network={
     psk="Your WPA/WPA2 security key"
     key_mgmt=WPA-PSK
 }
-~~~
+```
 
 
 - Unmount the microSD device, then place the microSD card in your RPi Zero
@@ -119,9 +119,9 @@ network={
 
 Open the terminal on your Raspberry Pi desktop and enter the following command:
 
-~~~sh
+```sh
 ssh pi@raspberrypi.local
-~~~
+```
 
 You will then be asked if you wish to trust this device (say yes), then prompted for the `pi` user's password - which is `raspberry`. After a moment you will be directly connected to your Raspberry Pi Zero. Hooray!
 
@@ -139,19 +139,19 @@ That's it!
 
 Next we will need to download and run the drivers needed for our 3.5-inch display to play nicely with our Pi Zero (just a blank white screen doesn't help us much). While connected to our RPi Zero via SSH, run the following commands:
 
-~~~sh
+```sh
 wget http://kedei.net/raspberry/v6_1/LCD_show_v6_1_3.tar.gz
-~~~
+```
 
 If you have snail-paced rural internet like I do, now is a good time to go and grab a coffee while this download completes.
 
 Once the download has finished, extract the contents and navigate to the new directory and install the driver:
 
-~~~sh
+```sh
 sudo tar xzf LCD_show_v6_1_3.tar.gz
 cd LCD_show_v6_1_3
 sudo ./LCD35_v
-~~~
+```
 
 Once completed, the RPi Zero will reboot and everything should work as expected!
 

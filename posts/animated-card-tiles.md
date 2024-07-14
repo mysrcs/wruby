@@ -21,7 +21,7 @@ For the base skeleton of these cards we only need:
 - the inner child element that will display on `:hover`
 - proper `h4` and `p` tags inside that child element
 
-~~~html
+```html
 <div class="card-tiles-container">
   <div class="card-tile">
     <div class="text-content">
@@ -30,7 +30,7 @@ For the base skeleton of these cards we only need:
     </div>
   </div>
 </div>
-~~~
+```
 
 That's all that is needed - for now. We will be returning to this code shortly to add some extra classes to make our lives easier.
 
@@ -38,17 +38,17 @@ That's all that is needed - for now. We will be returning to this code shortly t
 
 First we set the main housing container to use `flex` so we save ourselves the headache of aligning all the cards in a nice row:
 
-~~~css
+```css
 .card-tiles-container {
   display: flex;
   font-size: 14px;
   margin: 20px 0;
 }
-~~~
+```
 
 Next we create the default styling for our tile cards and set the `transform` property to scale the card on `:hover`:
 
-~~~css
+```css
 /* Default card tile styles */
 .card-tile {
   border: 1px solid;
@@ -63,7 +63,7 @@ Next we create the default styling for our tile cards and set the `transform` pr
 .card-tile:hover {
   transform: scale(1.1);
 }
-~~~
+```
 
 ### Where are my cards?!
 
@@ -73,7 +73,7 @@ Our next step is to hide the default inner `text-content` and only show it on ho
 
 When the user hovers over a main card tile, we change the `text-content` values of both the opacity and z-index to 1.
 
-~~~css
+```css
 /* Card tile text content */
 .card-tile .text-content {
   background: linear-gradient(rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.6) 100%);
@@ -94,24 +94,24 @@ When the user hovers over a main card tile, we change the `text-content` values 
   opacity: 1;
   z-index: 1;
 }
-~~~
+```
 
 Finally we add some minor styling for the inner header and paragraph tags:
 
-~~~css
+```css
 .card-tile .text-content h4,
 .card-tile .text-content p {
   color: #fff;
   margin: 0;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
 }
-~~~
+```
 
 ### Don't forget mobile
 
 We want out UI to stack the cards if users are viewing them on smaller devices:
 
-~~~css
+```css
 @media(max-width: 600px) {
   .card-tiles-container {
     flex-direction: column;
@@ -121,13 +121,13 @@ We want out UI to stack the cards if users are viewing them on smaller devices:
     width: 100%;
   }
 }
-~~~
+```
 
 ## Customizing each card
 
 Remember how I mentioned that we would be adding more classes to the original HTML? Now is the time. We will be including a simple class on each card tile to provide it's own custom coloring:
 
-~~~html
+```html
 <div class="card-tiles-container">
   <!-- `Blue` class -->
   <div class="card-tile blue">
@@ -151,11 +151,11 @@ Remember how I mentioned that we would be adding more classes to the original HT
     </div>
   </div>
 </div>
-~~~
+```
 
 And these color classes correlate to some new CSS styling:
 
-~~~css
+```css
 /* Blue Card */
 .card-tile.blue {
   background-color: #0093E9;
@@ -168,9 +168,9 @@ And these color classes correlate to some new CSS styling:
   box-shadow: 0 8px 18px rgba(128,208,199,0.4), 
               inset 0 2px 1px rgba(255,255,255,0.6);
 }
-~~~
+```
 
-~~~css
+```css
 /* Orange Card */
 .card-tile.orange {
   background-color: #FAD961;
@@ -183,9 +183,9 @@ And these color classes correlate to some new CSS styling:
   box-shadow: 0 8px 18px rgba(247,107,28,0.4), 
               inset 0 2px 1px rgba(255,255,255,0.6);
 }
-~~~
+```
 
-~~~css
+```css
 /* Green Card */
 .card-tile.green {
   background-color: #096e40;
@@ -198,7 +198,7 @@ And these color classes correlate to some new CSS styling:
   box-shadow: 0 8px 18px rgba(9,110,64,0.4), 
               inset 0 2px 1px rgba(255,255,255,0.6);
 }
-~~~
+```
 
 ### Adding transitions
 
@@ -206,13 +206,13 @@ We can now see the actual cards visually and have the ability to interact with t
 
 Lucky we can target all elements we wish to animate with the `transition` property, like so:
 
-~~~css
+```css
 /* Shared transitions */
 .card-tile,
 .card-tile .text-content {
     transition: .3s ease all;
 }
-~~~
+```
 
 Done and done.
 
@@ -222,7 +222,7 @@ To make things easier for reference, I have included all the `html` and `css` be
 
 ### HTML
 
-~~~html
+```html
 <div class="card-tiles-container">
   <div class="card-tile blue">
     <div class="text-content">
@@ -243,11 +243,11 @@ To make things easier for reference, I have included all the `html` and `css` be
     </div>
   </div>
 </div>
-~~~
+```
 
 ### CSS
 
-~~~css
+```css
 .card-tiles-container {
   display: flex;
   font-size: 14px;
@@ -344,4 +344,4 @@ To make things easier for reference, I have included all the `html` and `css` be
       width: 100%;
   }
 }
-~~~
+```

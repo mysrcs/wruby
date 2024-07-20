@@ -65,7 +65,7 @@ def process_markdown_files(input_directory, output_directory, header_content, fo
 end
 
 # Create the root index file
-def generate_index(posts, header_content, footer_content, root_index_file, output_dir)
+def generate_index(posts, header_content, footer_content, root_index_file, output_dir, posts_dir)
   root_index_content = File.read(root_index_file)
   root_title = extract_title_from_md(root_index_content.lines)
   root_html = Kramdown::Document.new(root_index_content).to_html
@@ -73,7 +73,7 @@ def generate_index(posts, header_content, footer_content, root_index_file, outpu
   header = replace_title_placeholder(header_content, root_title)
 
   index_content = header + root_html + "<ul class=\"posts\">\n"
-  posts.each { |post| index_content << "<li><span>#{post[:date]}</span><a href='#{post[:link]}'>#{post[:title]}</a></li>\n" }
+  posts.each { |post| index_content << "<li><span>#{post[:date]}</span><a href='/#{posts_dir}/#{post[:link]}'>#{post[:title]}</a></li>\n" }
   index_content << "</ul>\n" + footer_content
 
   File.write("#{output_dir}/index.html", index_content)
@@ -107,7 +107,7 @@ header_content = File.read(header_file)
 posts = process_markdown_files(posts_dir, posts_output_dir, header_content, footer_content).sort_by { |post| -post[:date].to_time.to_i }
 pages = process_markdown_files(pages_dir, pages_output_dir, header_content, footer_content)
 
-generate_index(posts, header_content, footer_content, root_index_file, output_dir)
+generate_index(posts, header_content, footer_content, root_index_file, output_dir, posts_dir)
 FileUtils.cp_r(public_dir, output_dir)
 generate_rss(posts, rss_file, author_name, site_name, site_url)
 

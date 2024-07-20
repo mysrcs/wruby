@@ -10,7 +10,7 @@ sources:
 - https://git.sr.ht/~bt/btxx.org
 tasks:
 - install-gems: |
-    sudo gem install kramdown fileutils
+    sudo gem install kramdown fileutils rss
 - build: |
     cd btxx.org
     make build

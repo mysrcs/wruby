@@ -1,20 +1,29 @@
 require 'kramdown'
 require 'fileutils'
 require 'date'
+require 'rss'
 
 # Define all the things
+site_url = 'https://bt.srht.site'
+site_name = 'btxx.org'
+author_name = 'Bradley Taunt'
+
 posts_dir = 'posts'
 pages_dir = 'pages'
 wiki_dir = 'pages/wiki'
 recipes_dir = 'pages/recipes'
+public_dir = 'public'
+
 output_dir = 'build'
 posts_output_dir = "#{output_dir}/posts"
 pages_output_dir = "#{output_dir}/"
 wiki_output_dir = "#{output_dir}/wiki/"
 recipes_output_dir = "#{output_dir}/recipes/"
+
 header_file = 'header.html'
 footer_file = 'footer.html'
 root_index_file = 'index.md'
+rss_file = "#{output_dir}/rss.xml"
 
 # Make sure output directories exist
 FileUtils.mkdir_p(posts_output_dir)
@@ -87,7 +96,7 @@ def process_markdown_files(input_directory, output_directory, content_array, hea
     end
 
     # Add item information to the array
-    content_array << { title: title, date: date, link: "#{output_directory.split('/').last}/#{file_name}/" }
+    content_array << { title: title, date: date, link: "#{output_directory.split('/').last}/#{file_name}/", content: html_content }
   end
 end
 
@@ -127,9 +136,35 @@ end
 index_content << "</ul>\n"
 index_content << footer_content
 
+# Copy the public directory to the build directory
+FileUtils.cp_r("#{public_dir}/.", output_dir)
+
 # Write the index file
 File.open("#{output_dir}/index.html", 'w') do |file|
   file.write(index_content)
+end
+
+# Generate RSS feed
+rss = RSS::Maker.make("atom") do |maker|
+  maker.channel.author = "#{author_name}"
+  maker.channel.updated = Time.now.to_s
+  maker.channel.about = "#{site_name}"
+  maker.channel.title = "#{site_name} RSS Feed"
+
+  posts.each do |post|
+    maker.items.new_item do |item|
+      item.link = "#{site_url}/#{post[:link]}"
+      item.title = post[:title]
+      item.updated = post[:date].to_s
+      item.content.type = 'html'
+      item.content.content = post[:content]
+    end
+  end
+end
+
+# Write RSS file
+File.open(rss_file, 'w') do |file|
+  file.write(rss)
 end
 
 puts "Blog built successfully in '#{output_dir}' folder. Have a great day!"

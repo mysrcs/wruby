@@ -1,8 +1,6 @@
 build:
 	rm -rf build && mkdir build
 	ruby blog.rb
-	rsync -r public/ build/public
-	rsync style.css build/style.css
 
 clean:
 	rm -rf build/*

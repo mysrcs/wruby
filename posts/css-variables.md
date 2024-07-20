@@ -8,12 +8,12 @@ The CSS language is becoming even more awesome and powerful everyday. In this qu
 
 Let's just jump right in - this is how you create variables in vanilla CSS:
 
-```css
+~~~css
 :root {
   --base-color: #e0e0e0;
   --text-color: #111;
 }
-```
+~~~
 
 We are using the `:root` selector at the very top of our CSS file in order to call these variables into any elements in the rest of our document. This is normally the safest way to include variables.
 
@@ -21,7 +21,7 @@ As for the variables themselves, you declare that they are variables using the `
 
 Now let's use those variables:
 
-```css
+~~~css
 .header {
   border: 1px solid var(--base-color);
 }
@@ -30,7 +30,7 @@ Now let's use those variables:
   background-color: var(--base-color);
   color: var(--text-color);
 }
-```
+~~~
 
 That's it! It's also good to know that CSS variables have pretty decent [browser support](https://caniuse.com/#feat=css-variables) (who likes IE11 anyway).
 

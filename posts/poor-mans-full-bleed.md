@@ -16,7 +16,7 @@ What does this have to do with full-bleed exactly? Well, the CSS we will be usin
 
 Let's create a single-column blog layout for this example. We will include a heading, some paragraphs, an image, and a blockquote to keep it simple:
 
-```html
+~~~html
 <main>
   <article>
     <h1>Main Heading</h1>
@@ -34,11 +34,11 @@ Let's create a single-column blog layout for this example. We will include a hea
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid placeat ipsum totam, facere animi tenetur explicabo at veniam, culpa vitae debitis hic modi velit cum perferendis minima quos sit quisquam.</p>
   </article>
 </main>
-```
+~~~
 
 This works well as it is, but we will need to "section" off our different areas of content based on whether we want them `full-bleed` or not. We do this with - you guessed it - the `section` element. In this demo we want the image and blockquote to become `full-bleed` when rendered, so we'll add the `full-bleed` class to those sections for now (more on that later):
 
-```html
+~~~html
 <main>
   <article>
     <section>
@@ -66,7 +66,7 @@ This works well as it is, but we will need to "section" off our different areas 
     </section>
   </article>
 </main>
-```
+~~~
 
 That's it for the HTML!
 
@@ -74,7 +74,7 @@ That's it for the HTML!
 
 Now take a deep breath and get ready for some hard CSS work:
 
-```css
+~~~css
 article {
     width: 100%;
 }
@@ -87,7 +87,7 @@ article section {
 article section.full-bleed {
     max-width: 100%;
 }
-```
+~~~
 
 That's it. *Really*. Now any element (blockquotes, specific headers, navigations, footers, etc) that you want to layout as "full-bleed", just wrap it in a `section` tag and sick the `full-bleed` class on it. Done and done.
 
@@ -97,11 +97,11 @@ Obviously you'll want to add more styling to clean-up and make your full-bleed l
 
 You could also further customize your options by including a class like `half-bleed`, which maybe only expands slightly outside the main section `max-width`:
 
-```css
+~~~css
 article section.half-bleed {
     max-width: 960px;
 }
-```
+~~~
 
 ### Sidenote
 

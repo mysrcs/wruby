@@ -12,20 +12,20 @@ Let's pretend that we have a total tally that pulls in the number of current use
 
 Here we create an empty `h2` tag that will update with the current number of users via js:
 
-```html
+~~~html
 <main>
     <h2 class="total-tally"></h2>
 </main>
-```
+~~~
 
 ### Javascript
 
 You'll have to use your imagination here and assume that the `totalTally` variable pulls in the numbers dynamically via API:
 
-```html
+~~~html
 var totalTally = "273,677" /* This would pull something dynamically in prod */
 document.getElementsByClassName("total-tally")[0].innerHTML=totalTally;
-```
+~~~
 
 ## The Problem
 
@@ -37,11 +37,11 @@ The easiest way to avoid these types of empty tags - add static content. I know 
 
 ### HTML (updated)
 
-```html
+~~~html
 <main>
     <h2 class="total-tally">200,000+</h2>
 </main>
-```
+~~~
 
 You might be reading this and saying to yourself, "Wow! Thanks Captain Obvious!" and that's a fair reaction. This is an *obvious* demo on purpose. If even one single reader learns to avoid leaving empty HTML tags that are solely dependent on Javascript injection, then I'd say this demo was a huge success.
 

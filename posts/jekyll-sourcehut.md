@@ -38,7 +38,7 @@ In order to have your Jekyll site build and push the correct files live, you wil
 
 To make things easier, you can copy the build file below (remember to use your *own* information for usernames, git repo naming etc):
 
-```sh
+~~~sh
 image: debian/stable
 oauth: pages.sr.ht/PAGES:RW
 packages:
@@ -60,7 +60,7 @@ tasks:
   tar -cvz . > ../../site.tar.gz
 - upload: |
   acurl -f https://pages.sr.ht/publish/$site -Fcontent=@site.tar.gz
-```
+~~~
 
 
 Save this file as `.build.yml` and place it in the root directory of your Jekyll source code.
@@ -73,17 +73,17 @@ If you're like me and want to use your own custom domain - have no fear! This pr
 
 First, add a new A Record through your domain provider:
 
-```sh
+~~~sh
 @ IN A 173.195.146.139
-```
+~~~
 
 
 Then change the following `environment` parameter inside your existing `.build.yml` file:
 
-```sh
+~~~sh
 environment:
 site: yourcustomdomain.com
-```
+~~~
 
 
 And that's it - custom domain set! If you run into any issues check out the [official documentation on custom domains](https://srht.site/custom-domains).

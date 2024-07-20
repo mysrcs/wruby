@@ -16,7 +16,7 @@ This is what we will be designing:
 
 ## The bones of our radio inputs (HTML)
 
-```html
+~~~html
 <input class="radio-btn" name="radio-collection" id="radio-1" type="radio">
 <label class="radio-label" for="radio-1"><span>I am very satisfied</span></label>
 
@@ -31,16 +31,16 @@ This is what we will be designing:
 
 <input class="radio-btn" name="radio-collection" id="radio-5" type="radio">
 <label class="radio-label" for="radio-5"><span>I am very unsatisfied</span></label>
-```
+~~~
 
 
 I know it looks like a lot is going on here, but it's pretty straightforward so let's unpackage line by line:
 
 ### Radio inputs
 
-```html
+~~~html
 <input class="radio-btn" name="radio-collection" id="radio-1" type="radio">
-```
+~~~
 
 
 This is the default `radio` input. We give it:
@@ -67,7 +67,7 @@ This is looking pretty terrible - but that's nothing some good ol' CSS can't fix
 
 First we give some basic styling to our `label` and `input` classes (along with hover states). The `radio` element is actually hidden from view, but by using the `visibility` attribute we still keep it accessible for screen-readers.
 
-```css
+~~~css
 .radio-label {
   background: white;
   border: 1px solid #eee;
@@ -90,21 +90,21 @@ First we give some basic styling to our `label` and `input` classes (along with 
   position: absolute;
   visibility: hidden;
 }
-```
+~~~
 
 Remember that `span` element inside the label? We set it's `user-select` property to `none` so we avoid any possible issue with the user selecting the text on-click:
 
-```css
+~~~css
 .radio-label span {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
 }
-```
+~~~
 
 Next we include the default empty selection element (to mimic the original radio input) via a pseudo element:
 
-```css
+~~~css
 .radio-label:before {
   background: #eee;
   border-radius: 50%;
@@ -117,7 +117,7 @@ Next we include the default empty selection element (to mimic the original radio
   transition: .3s ease background-color;
   width: 30px;
 }
-```
+~~~
 
 ## A Few Final Steps
 
@@ -125,7 +125,7 @@ The final step is adding the custom styling for when an `input` item is selected
 
 You will notice the use of a `base64` element for the custom checkmark - feel free to subsitute this for an actual image or none at all (this is just my personal design preference).
 
-```css
+~~~css
 .radio-btn:checked + .radio-label {
   background: #ECF5FF;
   border-color: #4A90E2;
@@ -137,13 +137,13 @@ You will notice the use of a `base64` element for the custom checkmark - feel fr
   background-position: center;
   background-size: 15px;
 }
-```
+~~~
 
 **And that's it.**
 
 For easier reference the entire CSS file can be found below:
 
-```css
+~~~css
 .radio-label {
   background: white;
   border: 1px solid #eee;
@@ -192,7 +192,7 @@ For easier reference the entire CSS file can be found below:
   background-position: center;
   background-size: 15px;
 }
-```
+~~~
 
 ---
 
@@ -202,7 +202,7 @@ Since this demo is based off a survey-type questionaire, wouldn't it be interest
 
 We can do so by adding `positive`, `neutral` and `negative` class names to the radio inputs with their own respective properties:
 
-```css
+~~~css
 .radio-btn.positive:checked + .radio-label {
   background: #EAFFF6;
   border-color: #32B67A;
@@ -221,6 +221,6 @@ We can do so by adding `positive`, `neutral` and `negative` class names to the r
   background-color: #E75153;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIxLjg1MTg1IC0zOS42OTcgMjAgMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjwhLS1HZW5lcmF0ZWQgYnkgSUpTVkcgKGh0dHBzOi8vZ2l0aHViLmNvbS9pY29uamFyL0lKU1ZHKS0tPjxwYXRoIGQ9Ik0yMS43Mjk5LC0yMy40NzFjMCwwLjQ0NjQyOCAtMC4xNTYyNSwwLjgyNTg5MyAtMC40Njg3NSwxLjEzODM5bC0yLjI3Njc5LDIuMjc2NzljLTAuMzEyNSwwLjMxMjUgLTAuNjkxOTY0LDAuNDY4NzUgLTEuMTM4MzksMC40Njg3NWMtMC40NDY0MjgsMCAtMC44MjU4OTMsLTAuMTU2MjUgLTEuMTM4MzksLTAuNDY4NzVsLTQuOTIxODcsLTQuOTIxODhsLTQuOTIxODgsNC45MjE4OGMtMC4zMTI1LDAuMzEyNSAtMC42OTE5NjQsMC40Njg3NSAtMS4xMzgzOSwwLjQ2ODc1Yy0wLjQ0NjQyOCwwIC0wLjgyNTg5MiwtMC4xNTYyNSAtMS4xMzgzOSwtMC40Njg3NWwtMi4yNzY3OSwtMi4yNzY3OWMtMC4zMTI1LC0wLjMxMjUgLTAuNDY4NzUsLTAuNjkxOTY1IC0wLjQ2ODc1LC0xLjEzODM5YzAsLTAuNDQ2NDI5IDAuMTU2MjUsLTAuODI1ODkzIDAuNDY4NzUsLTEuMTM4MzlsNC45MjE4OCwtNC45MjE4OGwtNC45MjE4OCwtNC45MjE4OGMtMC4zMTI1LC0wLjMxMjUgLTAuNDY4NzUsLTAuNjkxOTY0IC0wLjQ2ODc1LC0xLjEzODM5YzAsLTAuNDQ2NDI4IDAuMTU2MjUsLTAuODI1ODkzIDAuNDY4NzUsLTEuMTM4MzlsMi4yNzY3OSwtMi4yNzY3OGMwLjMxMjUsLTAuMzEyNSAwLjY5MTk2NCwtMC40Njg3NSAxLjEzODM5LC0wLjQ2ODc1YzAuNDQ2NDI5LDAgMC44MjU4OTMsMC4xNTYyNSAxLjEzODM5LDAuNDY4NzVsNC45MjE4OCw0LjkyMTg4bDQuOTIxODcsLTQuOTIxODhjMC4zMTI1LC0wLjMxMjUgMC42OTE5NjUsLTAuNDY4NzUgMS4xMzgzOSwtMC40Njg3NWMwLjQ0NjQyOSwwIDAuODI1ODkzLDAuMTU2MjUgMS4xMzgzOSwwLjQ2ODc1bDIuMjc2NzksMi4yNzY3OGMwLjMxMjUsMC4zMTI1IDAuNDY4NzUsMC42OTE5NjUgMC40Njg3NSwxLjEzODM5YzAsMC40NDY0MjkgLTAuMTU2MjUsMC44MjU4OTMgLTAuNDY4NzUsMS4xMzgzOWwtNC45MjE4OCw0LjkyMTg4bDQuOTIxODgsNC45MjE4OGMwLjMxMjUsMC4zMTI1IDAuNDY4NzUsMC42OTE5NjQgMC40Njg3NSwxLjEzODM5WiIgdHJhbnNmb3JtPSJzY2FsZSgxLjAwNTYxKSIgZmlsbD0iI2ZmZiI+PC9wYXRoPjwvc3ZnPg==');
 }
-```
+~~~
 
 I hope this shows new designers that simple custom radio inputs aren't so hard to implement after-all and can actually be pretty fun to design.

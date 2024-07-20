@@ -12,16 +12,16 @@ So I thought I would share my process of setting up an older version of MongoDB 
 
 You will need to target the specific version of MongoDB using the very awesome AUR packages:
 
-```sh
+~~~sh
 yay -S mongodb34-bin
-```
+~~~
 
 Follow the instructions and you'll be good to go. Don't forget to create the `/data/db` directory and give it proper permissions:
 
-```sh
+~~~sh
 mkdir -p /data/db/
 chmod -R 777 /date/db
-```
+~~~
 
 ## What About My "Tools"?
 
@@ -29,16 +29,16 @@ If you plan to use MongoDB, then you most likely want to utilize the core databa
 
 So, you'll have to build from source locally:
 
-```sh
+~~~sh
 git clone https://github.com/mongodb/mongo-tools
 cd mongodb-tools
 ./make build
-```
+~~~
 
 Then you'll need to copy the built executables into the proper directory in order to use them from the terminal:
 
-```sh
+~~~sh
 cp bin/* /usr/local/bin/
-```
+~~~
 
 And that's it! Now you can run `mongod` directly or use `systemctl` to enable it by default. Hopefully this helps anyone else curious about running older (or even outdated!) versions of MongoDB.

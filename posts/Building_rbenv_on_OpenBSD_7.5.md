@@ -8,54 +8,54 @@ I use Ruby (specifically with Jekyll) for a lot of my clubs/projects while using
 
 First, be sure to install the required packages in order to build from source, and then clone the core `rbenv` repo:
 
-```sh
+~~~sh
 pkg_add git gcc gmake libffi libyaml openssl
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-```
+~~~
 
 ## Building `rbenv`
 
 Add `rbenv` to your PATH and initialize it (place this inside your `.bashrc` or `.zshrc` etc):
 
-```sh
+~~~sh
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/.rbenv/shims:$PATH"
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=/usr/local"
 eval "$(rbenv init -)"
-```
+~~~
 
 Then reload your shell (zsh in this example): 
 
-```sh
+~~~sh
 source ~/.zshrc
-```
+~~~
 
 Next we will need to install `ruby-build` as a `rbenv` plugin. Clone the ruby-build repository into the rbenv plugins directory:
 
-```sh
+~~~sh
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
-```
+~~~
 
 ## Installing Ruby and Setting Our Version
 
 Now use `rbenv` to install the desired version of Ruby (we will get an older version for this example):
 
-```sh
+~~~sh
 rbenv install 3.3.0
-```
+~~~
 
 If you run into issues, you may need to specify your openssl directory:
 
-```sh
+~~~sh
 RUBY_CONFIGURE_OPTS="--with-openssl-dir=/usr/local" rbenv install 3.3.0
-```
+~~~
 
 If you're on a slower machine (like mine) this might take a little bit. Just grab a coffee or a snack while you wait!
 
 Then navigate to your project of choice and set the `local` Ruby version:
 
-```sh
+~~~sh
 rbenv local 3.3.0
-```
+~~~
 
 That's it! If you'd prefer to set this version of Ruby for all projects going forward, simply replace `local` with `global`.

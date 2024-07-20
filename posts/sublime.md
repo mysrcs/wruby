@@ -20,31 +20,31 @@ You'll need to install flatpak, give your current user permission to install fla
 
 (The following snippets assume you are using `doas`. If you are using `sudo`, be sure to swap accordingly)
 
-```sh
+~~~sh
 apk add flatpak
 adduser <YourUsername> flatpak
 flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-```
+~~~
 
 Congrats. You now have setup `flatpak` on your machine! Next we install Sublime Text:
 
-```sh
+~~~sh
 flatpak install flathub com.sublimetext.three
-```
+~~~
 
 You could stop now and simply open Sublime anytime by running the following command in your terminal:
 
-```sh
+~~~sh
 flatpak run com.sublimetext.three
-```
+~~~
 
 This works perfectly fine but I find it a little cumbersome. I would much rather open my programs directly through dmenu. Let's set that up.
 
 ## Creating System Links
 
-```sh
+~~~sh
 doas ln -s ~/.local/share/flatpak/exports/bin/com.sublimetext.three /usr/bin/sublimetext
-```
+~~~
 
 Now that those directories are linked, simply open dmenu and start typing `sublimetext`. Done and done. No more terminal commands needed to open Sublime!
 

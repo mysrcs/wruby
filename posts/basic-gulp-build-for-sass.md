@@ -6,7 +6,7 @@ Some designers might shy away from build tools when first starting out and I can
 
 Here is the final `gulp.js` file in all it's glory:
 
-```js
+~~~js
 var gulp = require('gulp');
 var shell = require('gulp-shell');
 var sass = require('gulp-sass');
@@ -33,7 +33,7 @@ gulp.task('build', gulp.series(
   'assets',
     generate'
 ));
-```
+~~~
 
 Trust me, it's not complicated at all.
 
@@ -41,11 +41,11 @@ Trust me, it's not complicated at all.
 
 For our basic build file we are going to need only three modules: `gulp`, `gulp-shell` and `gulp-sass`.
 
-```js
+~~~js
 var gulp = require('gulp');
 var shell = require('gulp-shell');
 var sass = require('gulp-sass');
-```
+~~~
 
 #### gulp
 This is the streaming build system, without it we can't do anything else.
@@ -66,9 +66,9 @@ Required for gulp to compile Sass into vanilla CSS.
 
 Our first step is to create the default task that will generate our build. In this example we are making the assumption that we're building a Jekyll website (but you can place any build command here):
 
-```sh
+~~~sh
 gulp.task('generate', shell.task('jekyll serve'));
-```
+~~~
 
 
 Don't worry if this `generate` isn't clear, we come back to that later.
@@ -77,41 +77,41 @@ Don't worry if this `generate` isn't clear, we come back to that later.
 
 We will name this next task `styles` since that's what it outputs - our styling. We start by telling gulp where our main `scss` directory is:
 
-```js
+~~~js
 /* Change this directory to match yours */
 return gulp.src('_includes/assets/sass/styles.scss')
-```
+~~~
 
 
 This next piece tells the plugin to compress our final compiled CSS, log any errors if there are issues with the build and then export it to our destination directory:
 
-```js
+~~~js
 .pipe(sass({
   outputStyle: 'compressed'
 }).on('error', sass.logError))
 
 /* Change this to your destination directory */
 .pipe(gulp.dest('_includes/assets/css/'));
-```
+~~~
 
 ## Building our assets
 
 This step isn't 100% needed, but I like to include it for when more assets need to be added (minifying JavaScript, compressing images, etc)
 
-```js
+~~~js
 /*
 Compile the assets
 */
 gulp.task('assets', gulp.parallel(
   'styles'
 ));
-```
+~~~
 
 ## Altogether now!
 
 Now we add a task that runs all other tasks in our gulp file (in this case it will run both `assets` and `generate`)
 
-```js
+~~~js
 /*
 Build
 */
@@ -119,7 +119,7 @@ gulp.task('build', gulp.series(
     'assets',
     'generate'
 ));
-```
+~~~
 
 And that's it - we're done! A very basic `gulp` build for compiling Sass.
 

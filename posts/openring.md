@@ -12,9 +12,9 @@ So, I thought others might be interested in how I've implemented openring throug
 
 You can pull the project [directly via SourceHut](https://sr.ht/~sircmpwn/openring/) if you wish, but I would recommend installing through your default package manager. I'm running Arch, so for me it was as simple as running:
 
-```sh
+~~~sh
 yay -S openring
-```
+~~~
 
 That's it. I now have full local access to openring!
 
@@ -24,7 +24,7 @@ You *could* setup a whole new directory specifically for your openring files, bu
 
 ### openring-in.html Contents
 
-```html
+~~~html
 <!-- License-Id: CC0-1.0 -->
 <section class="webring">
   <h3>Articles from blogs I follow around the world wide web</h3>
@@ -75,7 +75,7 @@ You *could* setup a whole new directory specifically for your openring files, bu
   color: #555;
 }
 </style>
-```
+~~~
 
 > Sidenote: You will get minor Liquid Syntax warnings in the console when running your website via `serve` or `build`. I don't really mind those warnings but if you do, feel free to move these files out into their own sub-directory in your project folder.
 
@@ -89,7 +89,7 @@ To simplify things, we are going to place our main commands in a single build sc
 
 Place the following inside that file:
 
-```sh
+~~~sh
 openring \
   -s https://example.com/feed.xml \
   -s https://example.com/feed.xml \
@@ -97,25 +97,25 @@ openring \
   < _includes/openring-in.html \
   > _includes/openring-out.html
 bundle exec jekyll build
-```
+~~~
 
 ## Edit `_config.yml`
 
 Next we need to make sure we exclude our new `build-site` script file, since we really don't need that pushed up to the main server:
 
-```sh
+~~~sh
 # Includes / Excludes
 exclude:
   - build-site.sh
-```
+~~~
 
 ## Almost Done...
 
 Now you just need to decide where you want your `openring` feed outputs to render. For this example, we will place them at the bottom of every blog post inside the `_layouts/post.html` file, like so:
 
-```ruby
+~~~ruby
 {% raw %}{% include openring-out.html %}{% endraw %}
-```
+~~~
 
 ## Build It & They Will Come
 

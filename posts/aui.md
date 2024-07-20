@@ -14,27 +14,27 @@ Since I've been wanting to dip my toes into more tutorial-based articles (maybe 
 
 Since this project consists of only two buttons elements, the HTML or <i>skeleton</i> of this project is very straightforward:
 
-```html
+~~~html
 <button class="cancel">Cancel</button>
 <button class="confirm">Confirm</button>
-```
+~~~
 
 ### Styling the buttons
 
 The first step is to remove the browser's default button styling by using the `appearance` property. This will help avoid having to fight against the browser and minimize our CSS code.
 
-```css
+~~~css
 button {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
-```
+~~~
 
 Next, we apply a fairly simple set of CSS that will be shared across both the confirm and cancel buttons:
 
 (Pay attention to the `transition` property as we will be returning to that shortly)
 
-```css
+~~~css
 button {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -49,11 +49,11 @@ button {
   position: relative;
   transition: all ease .3s;
 }
-```
+~~~
 
 Then we separate the specific confirm and cancel button styles into their own class selectors:
 
-```css
+~~~css
 button.confirm {
   background: #4A90E2;
   border-color: #3672B6;
@@ -65,7 +65,7 @@ button.cancel {
   border-color: #B8B8B8;
   color: #6F6F6F;
 }
-```
+~~~
 
 ### Playing with pseudo elements
 
@@ -73,7 +73,7 @@ Now that the button is styled and structured with basic formatting, it's time to
 
 The cleanest way to do this is by using the `:before` pseudo element paired with a linear-gradient background.
 
-```css
+~~~css
 button:before {
   background: linear-gradient(rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
   border-radius: 125px;
@@ -85,18 +85,18 @@ button:before {
   transition: all ease .3s;
   width: 92%;
 }
-```
+~~~
 
 ### Adding interaction
 
 The final step is adding the user hover interaction: (Remember that `transition` property?)
 
-```css
+~~~css
 button:hover {
   box-shadow: inset 0 13px 25px rgba(255,255,255,0.8), 0 3px 5px rgba(0,0,0,0.2), 0 10px 13px rgba(0,0,0,0.2);
   transform: scale(1.02);
 }
-```
+~~~
 
 That's it!
 

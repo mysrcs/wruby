@@ -10,31 +10,31 @@ So this post is more or less a helpful document for my future self. If it happen
 
 Make sure you have the basic packages first:
 
-```sh
+~~~sh
 apk update
 apk add curl gcc gnupg gpg dirmngr procps musl-dev linux-headers zlib zlib-dev openssl openssl-dev libssl1.1
-```
+~~~
 
 Next download the latest `stable` version of `rvm` from Github, unpack it, place it in the proper user directory (~/.rvm) and install any required libs:
 
-```sh
+~~~sh
 curl -sSL https://github.com/rvm/rvm/tarball/stable -o rvm-stable.tar.gz
 echo 'export rvm_prefix="$HOME"' > ~/.rvmrc
 echo 'export rvm_path="$HOME/.rvm"' >> ~/.rvmrc
 mkdir rvm && cd rvm
 tar --strip-components=1 -xzf ../rvm-stable.tar.gz
 ./install --auto-dotfiles --autolibs=0
-```
+~~~
 
 Now we can remove everything and properly link to `rvm`:
 
-```sh
+~~~sh
 cd ../ && rm -rf rvm-stable stable.tar.gz rvm
 source ~/.rvm/scripts/rvm
-```
+~~~
 
 Now you can freely install any version of Ruby that you desire!
 
-```sh
+~~~sh
 rvm install ruby-X.X.X
-```
+~~~

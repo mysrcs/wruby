@@ -39,21 +39,21 @@ Box shadow on <abbr title="hypertext markup language">HTML</abbr> elements has b
 
 Let's take a look at a default configuration of `box-shadow`:
 
-```css
+~~~css
 .box-container {
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
-```
+~~~
 
 In the example above the first property number is the origin of the *x-axis*, the second number is the origin of the *y-axis* and the third is the amount of *blur*.
 
 We should also add some minimal styling to cleanup the `.box-container` a little bit for our example:
 
-```html
+~~~html
 <div class="box-container"></div>
-```
+~~~
 
-```css
+~~~css
 .box-container {
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   /* Styles to make it less ugly */
@@ -65,7 +65,7 @@ We should also add some minimal styling to cleanup the `.box-container` a little
   position: relative;
   width: 250px;
 }
-```
+~~~
 
 Which would render as this:
 
@@ -79,17 +79,17 @@ Not bad - but we can do a lot better than this.
 
 We just need to add a simple child `div` (or use a `pseudo` element if you prefer) inside our main element we want to apply the shadow to:
 
-```html
+~~~html
 <div class="box-container">
   <div class="box-container-inner"></div>
 </div>
-```
+~~~
 
 Now we make our inner child element `absolute` and set it's `height` and `width` dynamically to be slightly smaller than it's parent (percentages work best for this). 
 
 Remember to set this child element behind it's parent by adding `z-index: -1`.
 
-```css
+~~~css
 .box-container {
   /* No box-shadow needed on this element anymore */
   /* Styles to make it less ugly */
@@ -101,13 +101,13 @@ Remember to set this child element behind it's parent by adding `z-index: -1`.
   position: relative;
   width: 250px;
 }
-```
+~~~
 
 ## Inner Containers
 
 We also need to target the `box-container-inner` element set inside the current parent to reflect our custom shadow styling:
 
-```sh
+~~~sh
 .box-container-inner {
   bottom: 0;
   /* The box-shadow is added here now */
@@ -118,7 +118,7 @@ We also need to target the `box-container-inner` element set inside the current 
   width: 94%;
   z-index: -1;
 }
-```
+~~~
 
 Which will make the drop-shadow render with a little more realistic depth:
 
@@ -131,7 +131,7 @@ We could stop now and have a decent drop-shadow that is certainly easier on the 
 
 So your final code would look like this:
 
-```css
+~~~css
 .box-container {
   /* Styles to make it less ugly */
   background: white;
@@ -153,7 +153,7 @@ So your final code would look like this:
   width: 94%;
   z-index: -1;
 }
-```
+~~~
 
 Which renders out into a much smoother blend of a drop-shadow, creating a more realistic illusion of depth:
 

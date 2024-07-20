@@ -16,7 +16,7 @@ For this concept we will actually be building this graph out of `tables` - crazy
 
 (But more on that in the CSS section)
 
-```html
+~~~html
 <p>Sales of the leading frozen pizza brands of the United States from 2011 to 2017 (in million US dollars) <br><em>Source: Statisa 2018</em></p>
 <table>
   <thead>
@@ -54,7 +54,7 @@ For this concept we will actually be building this graph out of `tables` - crazy
     </tr>
   </tbody>
 </table>
-```
+~~~
 
 As you can see, nothing too fancy is happpening here. Pay close attention to the `data-set` and `data-name` variables though - those will be important for the CSS portion of this design, mainly the rendering of the line elements.
 
@@ -64,7 +64,7 @@ As you can see, nothing too fancy is happpening here. Pay close attention to the
 
 To avoid overwhelming your brain all-at-once, let's break the CSS down into bite-sized chunks, starting with the base styling:
 
-```css
+~~~css
 @import url('https://opentype.netlify.com/et-book/index.css');
 * {
   box-sizing: border-box;
@@ -93,7 +93,7 @@ table {
   text-align: left;
   width: 100%;
 }
-```
+~~~
 
 Pretty basic stuff.
 
@@ -106,7 +106,7 @@ Now we need to design how our slope graph will look on larger screens / desktops
 5. Remember that `data-name` variable? We now use that for our `:before` pseudo element for `table tbody tr td:nth-of-type(3)`
 6. After that, you can see the simple customization we include to render the angle / position of the slope lines and the corresponding labels
 
-```css
+~~~css
 @media(min-width:800px) {
   table {
     display: block;
@@ -204,11 +204,11 @@ Now we need to design how our slope graph will look on larger screens / desktops
     width: 56%;
   }
 }
-```
+~~~
 
 All that's left are some minor styles to make everything look nice on mobile:
 
-```css
+~~~css
 @media(max-width:800px) {
   p {
     margin: 2rem 0;
@@ -221,7 +221,7 @@ All that's left are some minor styles to make everything look nice on mobile:
     text-align: right;
   }
 }
-```
+~~~
 
 ## Not the most practical
 This slope graph concept is far from perfect for use in real-world situations. The fact that you need to manually render each point of data yourself makes this implementation quite annoying for more in-depth projects.

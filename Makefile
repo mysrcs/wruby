@@ -1,6 +1,6 @@
 build:
 	rm -rf build && mkdir build
-	sh ./barf
+	ruby blog.rb
 	rsync -r public/ build/public
 	rsync style.css build/style.css
 

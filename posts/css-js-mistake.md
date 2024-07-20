@@ -32,7 +32,7 @@ Yes - and again more hypocrisy. My livelihood depends on software requiring cust
 
 ### A Look at the "New World"
 
-Sometimes it is easier to visualize a concept instead of just discussing it. Below you can find an example of a "converted" website[^1] showcasing how sites would look and feel in this design-less reality:
+Sometimes it is easier to visualize a concept instead of just discussing it. Below you can find an example of a "converted" website [^1] showcasing how sites would look and feel in this design-less reality:
 
 - Wealthsimple: [Current Website](https://www.wealthsimple.com/en-ca/) / [New Version](/etc/html-only/wealthsimple/)
 

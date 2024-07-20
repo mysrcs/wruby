@@ -137,7 +137,7 @@ index_content << "</ul>\n"
 index_content << footer_content
 
 # Copy the public directory to the build directory
-FileUtils.cp_r("#{public_dir}/.", output_dir)
+FileUtils.cp_r("#{public_dir}", output_dir)
 
 # Write the index file
 File.open("#{output_dir}/index.html", 'w') do |file|

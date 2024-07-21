@@ -5,7 +5,7 @@ require 'rss'
 
 # Configuration all the things!
 site_url = 'https://bt.srht.site'
-site_name = 'btxx.org'
+site_name = 'bt'
 author_name = 'Bradley Taunt'
 
 posts_dir = 'posts'
@@ -84,7 +84,7 @@ def generate_rss(posts, rss_file, author_name, site_name, site_url)
   rss = RSS::Maker.make("atom") do |maker|
     maker.channel.author = author_name
     maker.channel.updated = Time.now.to_s
-    maker.channel.about = site_name
+    maker.channel.about = site_url
     maker.channel.title = "#{site_name} RSS Feed"
 
     posts.each do |post|
@@ -112,3 +112,4 @@ FileUtils.cp_r(public_dir, output_dir)
 generate_rss(posts, rss_file, author_name, site_name, site_url)
 
 puts "Blog built successfully in '#{output_dir}' folder. Have a great day!"
+

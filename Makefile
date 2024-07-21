@@ -5,9 +5,4 @@ build:
 clean:
 	rm -rf build/*
 
-watch:
-	while true; do \
-	ls -d .git/* * posts/* pages/* header.html | entr -cd make build ;\
-	done
-
-.PHONY: build clean watch
+.PHONY: build clean 

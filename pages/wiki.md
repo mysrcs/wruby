@@ -5,57 +5,39 @@ This is the homepage for my personal wiki. All sub-directories are listed below.
 ## Software
 
 * [alpine linux](/wiki/alpine-linux)
-* [[wiki/dotfiles]]
-* [[wiki/openbsd]]
-* [[wiki/qutebrowser]]
-* [[wiki/safari]]
-* [[wiki/scripts]]
-* [[wiki/sublime-text]]
-* [[wiki/ubuntu]]
+* [dotfiles](/wiki/dotfiles)
+* [openbsd](/wiki/openbsd)
+* [qutebrowser](/wiki/qutebrowser)
+* [safari](wiki/safari)
+* [scripts](wiki/scripts)
+* [sublime text](/wiki/sublime-text)
+* [ubuntu](wiki/ubuntu)
 
 ---
 
 ## Hardware
 
-* [[wiki/xbox]]
-* [[wiki/ps2]]
+* [xbox](/wiki/xbox)
+* [ps2](/wiki/ps2)
 
 ---
 
 ## Version Control Systems
 
-* [[wiki/cgit]]
+* [cgit](/wiki/cgit)
 
 ---
 
 ## ikiwiki
 
-[[!meta robots="noindex, follow"]]
-This wiki is powered by [ikiwiki](http://ikiwiki.info/).
-[[!if test="enabled(version)"
-     then="(Currently running version [[!version ]].)"
-]]
-
-The default documentation on using ikiwiki:
-
-* [[ikiwiki/formatting]]
-* [[ikiwiki/wikilink]]
-* [[ikiwiki/subpage]]
-* [[ikiwiki/pagespec]]
-* [[ikiwiki/directive]]
-* [[ikiwiki/markdown]]
-* [[ikiwiki/openid]]
-* [[ikiwiki/searching]]
-* [[templates]]
-
 My own custom documentation for ikiwiki:
 
-* [[ikiwiki/NearlyFreeSpeech]]
-* [[ikiwiki/git]]
-* [[ikiwiki/comments]]
-* [[ikiwiki/search]]
+* [NearlyFreeSpeech](/ikiwiki/NearlyFreeSpeech)
+* [git](/ikiwiki/git)
+* [comments](/ikiwiki/comments)
+* [search](/ikiwiki/search)
 
 ## WordPress
 
-* [[wordpress/database_update]]
-* [[wordpress/NearlyFreeSpeech_Setup]]
+* [Database Update](/wordpress/database_update)
+* [NearlyFreeSpeech Setup](/wordpress/NearlyFreeSpeech_Setup)

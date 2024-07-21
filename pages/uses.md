@@ -8,31 +8,34 @@ I'm proud to support open source products and privacy-respecting communities. Th
 
 |Service|Cost/year|
 |-------|--------------|
-|[gandi](https://gandi.net) - Domain renewal|$172|
-|[gandi mail](https://webmail.gandi.net) - Email service|$64|
-|[sourcehut](https://sourcehut.org) - Open source code forge.|$60|
-|[mullvad](https://mullvad.net) - Privacy focused VPN service provider.|$60|
+|[NearlyFreeSpeech](https://nearlyfreespeech.net)<br>Domains (5 total)|~$75|
+|[Migadu](https://migadu.com)<br>Email service|$19|
+|[Mullvad](https://mullvad.net)<br>Privacy focused VPN|$60|
+|[NearlyFreeSpeech](https://nearlyfreespeech.net)<br>Web hosting|~$20|
+|[sourcehut](https://sourcehut.org)<br>Code forge|$20|
 
-## Laptops
+## Work Laptop
 
-- **M2 MacBook Air** (Daily Work)
-  - CPU: M2 Apple Silicon
+
+- **M2 MacBook Air** (Daily Driver)
+  - CPU: Apple M2
   - RAM: 16GB
   - Storage: 256GB
-  - OS: macOS
+  - OS: MacOS Sonoma
+
+## Personal Laptops
 
 - **ThinkPad X220**
   - CPU: Intel Core i5 2540M @ 2.6 GHz
   - RAM: 16GB
   - Storage: 128GB SSD
-  - OS: OpenBSD ([see build](https://git.btxx.org/open-suck/about))
-  - OS: Alpine Linux ([see build](https://git.btxx.org/alpine-suck/about))
+  - OS: OpenBSD ([see build](https://sr.ht/~bt/open-suck))
 
 - **ThinkPad X201**
   - CPU: Intel Core i5-520M @ 2.9 GHz
   - RAM: 8GB
   - Storage: 128GB SSD
-  - OS: FreeBSD ([see build](https://git.btxx.org/suckless-beastie/about))
+  - OS: Alpine Suck ([see build](https://git.btxx.org/alpine-suck))
 
 As you can tell: I *really* like ThinkPads...
 
@@ -40,6 +43,7 @@ As you can tell: I *really* like ThinkPads...
 
 - Logitech Pebble Mouse
 - Cheap USB microphone
+- Samsung 27" 4K Monitor
 
 ## "Mobile" Devices
 

@@ -8,9 +8,9 @@ For those interested I try to keep the details of the blog up-to-date with the i
 
 | Parameter | Source |
 |---|---|
-|Built with:|[barf](https://barf.bt.ht)|
+|Built with:|[wruby](https://wruby.btxx.org)|
 |Hosted on:|[SourceHut Pages](https://srht.site/)|
-|Source code available:|[SourceHut](https://git.sr.ht/~bt/bt.ht)|
-|Licensed under:|[MIT](https://git.sr.ht/~bt/bt.ht/tree/master/item/LICENSE)|
-|Developed on:|ThinkPad X201|
-|Operating system:|OpenBSD|
+|Source code available:|[SourceHut](https://git.sr.ht/~bt/btxx.org)|
+|Licensed under:|[MIT](https://git.sr.ht/~bt/btxx.org/tree/master/item/LICENSE)|
+|Developed on:|ThinkPad X220|
+|Operating system:|OpenBSD & Alpine Linux|

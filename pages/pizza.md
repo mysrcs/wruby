@@ -6,8 +6,6 @@ If you feel the burning desire to donate to the *pizza fund* in order to support
 
 # Pizza Hall of Fame
 
-<img width="150" src="/public/images/pizza.svg" alt="pizza in a box">
-
 Listed below are the kind folks who have donated me pizzas. Note: most of these entries also have their websites included in the [1MB Club Hall of Fame](https://1mb.club).
 
 |Name|Amount|

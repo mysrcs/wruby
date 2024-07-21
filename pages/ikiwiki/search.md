@@ -1,6 +1,6 @@
 # Setting Up ikiwiki Search on NearlyFreeSpeech
 
-This page focuses on properly setting up ikiwiki search on [[ikiwiki/NearlyFreeSpeech]].
+This page focuses on properly setting up ikiwiki search on [NearlyFreeSpeech](/ikiwiki/NearlyFreeSpeech).
 
 ## Proper Packages
 

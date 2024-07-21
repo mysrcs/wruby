@@ -1,4 +1,4 @@
-Dual Booting OpenBSD and Alpine Linux on a X220 ThinkPad
+# Dual Booting OpenBSD and Alpine Linux on a X220 ThinkPad
 
 2024-07-10
 

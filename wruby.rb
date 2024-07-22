@@ -83,7 +83,7 @@ def generate_index(posts, header_content, footer_content, root_index_file, outpu
 end
 
 # Generate the RSS feed
-def generate_rss(posts, rss_file, author_name, site_name, site_url)
+def generate_rss(posts, rss_file, author_name, site_name, site_url, posts_dir)
   rss = RSS::Maker.make("atom") do |maker|
     maker.channel.author = author_name
     maker.channel.updated = Time.now.to_s
@@ -92,7 +92,7 @@ def generate_rss(posts, rss_file, author_name, site_name, site_url)
 
     posts.each do |post|
       maker.items.new_item do |item|
-        item.link = "#{site_url}/#{post[:link]}"
+        item.link = "#{site_url}/#{posts_dir}/#{post[:link]}"
         item.title = post[:title]
         item.updated = post[:date].to_s
         item.content.type = 'html'
@@ -112,7 +112,6 @@ pages = process_markdown_files(pages_dir, pages_output_dir, header_content, foot
 
 generate_index(posts, header_content, footer_content, root_index_file, output_dir, posts_dir)
 FileUtils.cp_r(public_dir, output_dir)
-generate_rss(posts, rss_file, author_name, site_name, site_url)
+generate_rss(posts, rss_file, author_name, site_name, site_url, posts_dir)
 
 puts "Blog built successfully in '#{output_dir}' folder. Have a great day!"
-

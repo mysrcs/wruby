@@ -17,4 +17,4 @@ Core tools are HTML, CSS, Ruby, JavaScript & WordPress. Currently improving my s
 * [My Coffee Maker Just Makes Coffee](/posts/one-thing)
 * [Blog Anonymously](https://anon.btxx.org)
 
-## Articles & Tutorials
+## Latest Posts

@@ -2,7 +2,7 @@
 
 2023-01-09
 
-![Couple drinking cups of coffee](/public/images/coffee-couple.svg)
+<img style="background:white;" src="/public/images/coffee-couple.svg" alt="Couple drinking cups of coffee">
 
 I had to replace my dual Keurig coffee maker *twice* over a period of five months. This occurred a year ago and these are my findings.
 

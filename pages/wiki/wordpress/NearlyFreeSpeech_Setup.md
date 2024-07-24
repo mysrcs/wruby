@@ -1,6 +1,6 @@
-## Installing WordPress on NearlyFreeSpeech
+# Installing WordPress on NearlyFreeSpeech
 
-### Download WordPress
+## Download WordPress
 
 We will use the `wp-cli` that comes packaged with NearlyFreeSpeech (NFS):
 

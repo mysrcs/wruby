@@ -39,5 +39,5 @@ My own custom documentation for ikiwiki:
 
 ## WordPress
 
-* [Database Update](/wordpress/database_update)
-* [NearlyFreeSpeech Setup](/wordpress/NearlyFreeSpeech_Setup)
+* [Database Update](/wiki/wordpress/database_update)
+* [NearlyFreeSpeech Setup](/wiki/wordpress/NearlyFreeSpeech_Setup)

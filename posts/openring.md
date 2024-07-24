@@ -121,7 +121,7 @@ Now you just need to decide where you want your `openring` feed outputs to rende
 
 This next step is only for those using [SourceHut Pages](https://srht.site) to build and host their websites. If you use a different platform (ie Netlify, Vercel, GitHub Pages) the concept should be similar but will most likely require more tweaking on your end. Just a fair warning.
 
-I won't go into great detail about build script for SourceHut Pages, but feel free to take a look at my [very own build file for this website](https://git.sr.ht/~bt/bt.ht/tree/master/item/.build.yml). That *should* work out-of-the-box for most standard Jekyll websites. (Just be sure to edit with your own details!)
+I won't go into great detail about build script for SourceHut Pages, but feel free to take a look at my [very own build file for this website](https://git.sr.ht/~bt/btxx.orgtree/master/item/.build.yml). That *should* work out-of-the-box for most standard Jekyll websites. (Just be sure to edit with your own details!)
 
 **That's it**. You now have links to blogs you enjoy that will update with each build. Of course, the "latest" blog posts shown will become out-of-date if you don't blog (or at least re-build your website) on a regular basis. But for me, I see this as a good motivator to keep pushing out content!
 

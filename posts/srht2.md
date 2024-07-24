@@ -8,9 +8,9 @@ It has taken a little bit longer than I anticipated, but I have finally started 
 
 - [Vanilla CSS](https://vanillacss.com)
 - [The 1MB Club](https://1mb.club)
-- [pblog](https://pblog.bt.ht)
-- [shinobi](https://shinobi.bt.ht)
-- [Web Audit](https://audit.bt.ht)
+- [pblog](https://pblog.btxx.org)
+- [shinobi](https://shinobi.btxx.org)
+- [Web Audit](https://audit.btxx.org)
 
 ## Still WIP
 

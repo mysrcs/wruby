@@ -28,7 +28,7 @@ Removing the entire top lid was easier than I initially thought it would be. The
 
 ## Ditching Alpine for Debian
 
-I love Alpine Linux. It's normally my [go-to distro](https://as.bt.ht) (paired with dwm) for most of my laptop devices. Unfortunately, I find tiling window managers a slight pain to use on larger, 4K displays. I also wanted this slabtop to "just work", instead of needing to fiddle around with WiFi, `xrandr`, audio etc. Not to mention that Debian is rock solid stable. Defaulting to the XFCE DE was a no-brainer as well since this device is somewhat *old*.
+I love Alpine Linux. It's normally my go-to distro (paired with dwm) for most of my laptop devices. Unfortunately, I find tiling window managers a slight pain to use on larger, 4K displays. I also wanted this slabtop to "just work", instead of needing to fiddle around with WiFi, `xrandr`, audio etc. Not to mention that Debian is rock solid stable. Defaulting to the XFCE DE was a no-brainer as well since this device is somewhat *old*.
 
 ![The X201 slabtop connected to my 4K monitor](/public/images/slabtop-2.webp)
 

@@ -36,8 +36,8 @@ In the instance above I am rendering the entry title as a clickable element whic
 
 ## Live Example
 
-In a supported browser, you can see the code in action here: https://pblog.bt.ht/feed.xml
+In a supported browser, you can see the code in action here: https://pblog.btxx.org/feed.xml
 
 That's really all there is to it.
 
-[^1]: https://shinobi.bt.ht/posts/patch-3.txt
+[^1]: https://shinobi.btxx.org/posts/patch-3.txt

@@ -16,10 +16,10 @@ I originally started blogging on `bradleytaunt.com` using WordPress, but since t
 - Hugo
 - Blot
 - Static HTML/CSS
-- [PHPetite](https://phpetite.bt.ht)
-- [Shinobi](https://shinobi.bt.ht)
-- [pblog](https://pblog.bt.ht)
-- [barf](https://barf.bt.ht) *Currently using!*
+- [PHPetite](https://phpetite.btxx.org)
+- [Shinobi](https://shinobi.btxx.org)
+- [pblog](https://pblog.btxx.org)
+- [barf](https://barf.btxx.org) *Currently using!*
 
 
 **Personal:**

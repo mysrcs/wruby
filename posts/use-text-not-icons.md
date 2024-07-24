@@ -38,7 +38,7 @@ Normally, the inclusion of a hamburger menu is indicative of an overly complex a
 
 New features are great, but stop dumping so much of it behind hidden, unintuitive sub-navigation. This design is such a "quick fix" and plagues far too many software apps[^3]. Both desktop computers and mobile devices allow users to *scroll*, let them.
 
-I've discussed this in further detail here: [Using Hamburger Menus? Try Sausage Links](https://bt.ht/hamburger-menu-alternative/)
+I've discussed this in further detail here: [Using Hamburger Menus? Try Sausage Links](https://btxx.org/posts/hamburger-menu-alternative/)
 
 ## But what of the "advanced" users?
 

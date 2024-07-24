@@ -2,13 +2,13 @@
 
 2022-07-29
 
-I recently switched the [pblog](https://pblog.bt.ht) project repo over from Sourcehut to Codeberg (mostly for UX reasons) and it got me looking into [Codeberg Pages](https://codeberg.page). It seemed like a cleaner approach to host my personal blog on the same platform I planned to also share the source code.
+I recently switched the [pblog](https://pblog.btxx.org) project repo over from Sourcehut to Codeberg (mostly for UX reasons) and it got me looking into [Codeberg Pages](https://codeberg.page). It seemed like a cleaner approach to host my personal blog on the same platform I planned to also share the source code.
 
 I decided to share the setup process here since I couldn't find a straightforward guide explaining everything required to get going. So, let's dig in.
 
 ## Create the Repos
 
-**Disclaimer**: My personal blog uses [pblog](https://pblog.bt.ht), so although these instructions will be catered towards that SSG the same concept *should* apply for any other generator (Jekyll, Hugo, Next, etc.).
+**Disclaimer**: My personal blog uses [pblog](https://pblog.btxx.org), so although these instructions will be catered towards that SSG the same concept *should* apply for any other generator (Jekyll, Hugo, Next, etc.).
 
 The first step is to create the main repo that would house the core files of `pblog`. Then we need to make a separate repo simply called `pages`. This second project is where all the generated "static" files get rendered.
 

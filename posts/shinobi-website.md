@@ -2,7 +2,7 @@
 
 2022-05-13
 
-**Update 2023**: this website is now built with [barf](https://barf.bt.ht)
+**Update 2024**: this website is now built with [wruby](https://wruby.btxx.org)
 
 - - -
 
@@ -14,7 +14,7 @@ But before we get into greater details about the switch, let me first introduce 
 
 Instead of repeating myself in this post, feel free to read up about the project at the official site:
 
-[https://shinobi.bt.ht](https://shinobi.bt.ht)
+[https://shinobi.btxx.org](https://shinobi.btxx.org)
 
 To summarize: by using a simple `shell` script I'm able to render all my plain text files (which is now how I solely write my articles) into a structured RSS 2.0 `xml` file. Subscribers can now consume my posts directly in their RSS reader of choice without the need to directly visit the article's URL.[^1]
 

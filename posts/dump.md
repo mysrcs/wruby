@@ -76,7 +76,7 @@ This very website you're reading is built and run off of [SourceHut Pages](https
 - Customizable build settings
 - Support open source software!
 
-**Sidenote:** If you're interested in setting up a SSG (such as Jekyll or Hugo) through SourceHut, feel free to [fork this very website as a starting point](https://git.sr.ht/~bt/bt.ht). I also wrote up how to publish/build a Jekyll site on SourceHut in a [separate post](/srht) if you wish to see all the nitty-gritty details.
+**Sidenote:** If you're interested in setting up a SSG (such as Jekyll or Hugo) through SourceHut, feel free to [fork this very website as a starting point](https://git.sr.ht/~bt/btxx.org). I also wrote up how to publish/build a Jekyll site on SourceHut in a [separate post](/srht) if you wish to see all the nitty-gritty details.
 
 #### WordPress
 

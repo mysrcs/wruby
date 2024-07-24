@@ -4,13 +4,13 @@
 
 If you're an RSS subscriber, I've probably blown up your feed reader (again). This seems to be an on-going theme with this blog. I can't help it.
 
-This website now uses my *new* Pandoc-based static blog generator: [pblog](https://pblog.bt.ht). I won't go into great detail about it's features (or lack thereof) - if you're interested in that, check out the ["Introducing pblog" article](https://pblog.bt.ht/blog/pblog-intro.html).
+This website now uses my *new* Pandoc-based static blog generator: [pblog](https://pblog.btxx.org). I won't go into great detail about it's features (or lack thereof) - if you're interested in that, check out the ["Introducing pblog" article](https://pblog.btxx.org/blog/pblog-intro.html).
 
 The bigger question is, "Why the change?"
 
 ## Where's the Love for "Shinobi"?
 
-Switching over to `pblog` wasn't caused by a dislike of using [Shinobi](https://shinobi.bt.ht). In fact, I still really enjoy the work flow that that plain-text focused SSG provides. The main issues that popped up for my own blog was *accessibility* and *poor user experience*.
+Switching over to `pblog` wasn't caused by a dislike of using [Shinobi](https://shinobi.btxx.org). In fact, I still really enjoy the work flow that that plain-text focused SSG provides. The main issues that popped up for my own blog was *accessibility* and *poor user experience*.
 
 I had multiple readers reach out and mention poor rendering of content in their RSS reader of choice. That's kind of a **big deal**. I test that project as best I can with my limited access to all available RSS readers - but I can only test so much. It became one of those "Well, it works on my machine!" meme. So instead of spending an untold amount of time debugging every RSS reader known to man, I figured my best bet was to render things as `HTML`.
 

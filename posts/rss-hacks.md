@@ -47,7 +47,7 @@ Everything worked perfectly and the RSS was still valid!
 
 I've ported these changes over to this blog to perform some "in the wild" testing. You can see the custom feed list in your supported browser by visiting:
 
-[https://pblog.bt.ht/feed.xml](https://pblog.bt.ht/feed.xml)
+[https://pblog.btxx.org/feed.xml](https://pblog.btxx.org/feed.xml)
 
 As for the shinobi project itself, I have not merged these updates into the main master branch (at the time of publishing this article). They can be found sitting on patch-2[^5]. My plan is to get this merged ASAP once a little more real-world testing is finished and I can include a better "setup/install" section for newcomers.
 
@@ -55,7 +55,7 @@ As for the shinobi project itself, I have not merged these updates into the main
 
 If you're interested in more updates and details about the shinobi project itself, feel free to sub to that specific feed below. This post was more focused on hacking RSS parameters that happened to involve shinobi, but in the future all updates specific to the project will be posted there:
 
-[https://shinobi.bt.ht/feed.xml](https://shinobi.bt.ht/feed.xml)
+[https://shinobi.btxx.org/feed.xml](https://shinobi.btxx.org/feed.xml)
 
 [^1]: https://shinobi.website/
 [^2]: https://shinobi.website/posts/patch-1.txt

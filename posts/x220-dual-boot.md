@@ -1,6 +1,6 @@
 # Dual Booting OpenBSD and Alpine Linux on a X220 ThinkPad
 
-2024-07-09
+2024-07-10
 
 I've always found it useful to run both OpenBSD and some form of Linux variation on my personal machines. Most times, I would default to running one OS on bare metal, while the other would simply live in a VM. This works *okay* but I prefer my operating systems having a "hardware separator" - if that makes sense? So, I set off to start dual booting both OpenBSD and Alpine Linux on my X220 ThinkPad.
 

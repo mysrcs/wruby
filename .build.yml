@@ -5,7 +5,7 @@ packages:
 - go
 - hut
 environment:
-site: bt.srht.site
+site: btxx.org
 sources:
 - https://git.sr.ht/~bt/btxx.org
 tasks:
@@ -18,4 +18,4 @@ tasks:
     cd btxx.org/build
     tar -cvz . > ../../site.tar.gz
 - upload: |
-    hut pages publish -d bt.srht.site site.tar.gz
+    hut pages publish -d btxx.org site.tar.gz

@@ -2,6 +2,7 @@ image: alpine/latest
 oauth: pages.sr.ht/PAGES:RW
 packages:
 - ruby
+- ruby-dev
 - go
 - hut
 environment:
@@ -10,9 +11,10 @@ sources:
 - https://git.sr.ht/~bt/btxx.org
 tasks:
 - install-gems: |
-    sudo gem install kramdown rss
+    sudo gem install bundler
 - build: |
     cd btxx.org
+    sudo bundle install
     make build
 - package: |
     cd btxx.org/build

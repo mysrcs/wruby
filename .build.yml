@@ -11,11 +11,10 @@ sources:
 - https://git.sr.ht/~bt/btxx.org
 tasks:
 - install-gems: |
-    sudo gem install bundler
+    sudo gem install bundler kramdown rss
 - build: |
     cd btxx.org
-    sudo bundle install
-    make build
+    sudo make build
 - package: |
     cd btxx.org/build
     tar -cvz . > ../../site.tar.gz

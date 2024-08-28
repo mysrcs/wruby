@@ -10,7 +10,7 @@ In the game settings (depending on the game) change your Primary DNS information
 
 ## Emulator Settings
 
-![Mac OS Settings](https://btxx.org/wiki/ps2/networking/Screenshot_2024-03-20_at_10.49.01__8239__AM.png)
+![Mac OS Settings](/public/images/Screenshot_2024-03-20_at_10.49.01__8239__AM.png)
 
 If you're finding things tricky, [this YouTube video is extremely helpful](https://www.youtube.com/watch?v=9uXjpkBNkCk).
 

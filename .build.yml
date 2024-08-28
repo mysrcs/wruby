@@ -11,7 +11,7 @@ sources:
 - https://git.sr.ht/~bt/btxx.org
 tasks:
 - install-gems: |
-    sudo gem install bundler kramdown rss
+    sudo gem install bundler 'kramdown:2.4.0' 'rss:0.3.0'
 - build: |
     cd btxx.org
     sudo make build

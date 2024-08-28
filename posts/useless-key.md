@@ -27,7 +27,7 @@ The game *does* provide you with an inventory system, which holds your core item
   <figcaption>The main inventory screen. Shows everything you need to know, only when you need it. (I can <i>hear</i> this screenshot...)</figcaption>
 </figure>
 
-I don't need to a visual element in the bottom corner showing me a list of "items" I can cycle through. I don't want an ammo counter cluttering up my screen with information I only need to see in combat or while manually reloading. If those are pieces of information I need, I'll explicitly open and look for it. Don't make assumptions about what is important to me on screen. 
+I don't need a visual element in the bottom corner showing me a list of "items" I can cycle through. I don't want an ammo counter cluttering up my screen with information I only need to see in combat or while manually reloading. If those are pieces of information I need, I'll explicitly open and look for it. Don't make assumptions about what is important to me on screen. 
 
 Capcom took this concept of less visual clutter even further in regards to **maps** and the character **health status**.
 
@@ -77,7 +77,7 @@ Don't overlook how powerful of a interaction this little text prompt is. Ask any
 
 ## Inspiring Greatness
 
-RE2 is certainly not the first or last game to implement these "minimal" game systems. A more "modern" example is Dead Space (DS), along with its very faithful remake. In DS the character's health is displayed directly on the character model itself, and a similar inventory screen is used to manage items. An ammo-counter is visual but only when the player aims their weapon. Pretty great stuff and another masterpiece of survival horror.
+RE2 is certainly not the first or last game to implement these "minimal" game systems. A more "modern" example is Dead Space (DS), along with its very faithful remake. In DS the character's health is displayed directly on the character model itself, and a similar inventory screen is used to manage items. An ammo-counter is visible but only when the player aims their weapon. Pretty great stuff and another masterpiece of survival horror.
 
 <figure>
   <img src="/public/images/dead-space.jpg" alt="Screenshot of Dead Space, showing the lack of UI">

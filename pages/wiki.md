@@ -19,6 +19,7 @@ This is the homepage for my personal wiki. All sub-directories are listed below.
 
 * [xbox](/wiki/xbox)
 * [ps2](/wiki/ps2)
+* [dolphin](/wiki/dolphin)
 
 ---
 

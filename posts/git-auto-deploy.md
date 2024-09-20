@@ -1,6 +1,6 @@
 # Build and Deploy Websites Automatically with Git
 
-2024-09-19
+2024-09-20
 
 I recently began the process of setting up my self-hosted[^1] `cgit` server as my main code forge. Updating repos via [cgit on NearlyFreeSpeech](/wiki/cgit/) on its own has been simple enough, but it lacked the "wow-factor" of having some sort of automated build process. I looked into a bunch of different tools that I could add to my workflow and automate deploying changes. The problem was they all seemed to be fairly bloated or overly complex for my needs.
 

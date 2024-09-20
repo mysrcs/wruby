@@ -10,7 +10,7 @@ So I thought it would be best to document my full process. These notes are more 
 
 ## Before We Begin
 
-This "tutorial" assumes that you already have a `git` server setup. It shouldn't matter what kind of forge your using, so long as you have access to the `hooks/` directory and have the ability to write a custom `post-receive` script.
+This "tutorial" assumes that you already have a `git` server setup. It shouldn't matter what kind of forge you're using, so long as you have access to the `hooks/` directory and have the ability to write a custom `post-receive` script.
 
 For my purposes I will be running standard `git` via the web through `cgit`, hosted on NearlyFreeSpeech (FreeBSD based).
 
@@ -67,7 +67,7 @@ done
 
 Let's break everything down.
 
-First we check if the branch being pushed to the remote server is `master`. Only if this is true do we proceed. (Feel free to change this if your prefer something like `production` or `deploy`)
+First we check if the branch being pushed to the remote server is `master`. Only if this is true do we proceed. (Feel free to change this if you prefer something like `production` or `deploy`)
 
 ~~~bash
 if [ "$branch" == "master" ]; then

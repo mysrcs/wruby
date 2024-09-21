@@ -2,9 +2,9 @@
 
 This page a growing collection of active (and not-so-active) projects I am working on.
 
-All my open source projects are hosted through git on: [sourcehut](https://sr.ht/~bt/)
+My personal repos can be found here: [git.btxx.org](https://git.btxx.org)
 
-My personal backup repos can be found here: [git.btxx.org](https://git.btxx.org)
+All backups/mirros are hosted on: [sourcehut](https://git.sr.ht/~bt/)
 
 ## Active Projects
 
@@ -33,7 +33,7 @@ I have a serious problem creating custom site generators...
 
 ## Suckless Installers / Setups
 
-* [Open Suck](https://sr.ht/~bt/open-suck/): OpenBSD desktop based on the suckless philosophy
+* [Open Suck](https://git.btxx.org/open-suck/): OpenBSD desktop based on the suckless philosophy
 * [Alpine Suck](https://git.btxx.org/alpine-suck): Alpine Linux desktop based on the suckless philosophy
 
 ## Experiments

@@ -9,10 +9,10 @@ I'm proud to support open source products and privacy-respecting communities. Th
 |Service|Cost/year|
 |-------|--------------|
 |[NearlyFreeSpeech](https://nearlyfreespeech.net)<br>Domains (5 total)|~$75|
+|[NearlyFreeSpeech](https://nearlyfreespeech.net)<br>Web hosting|~$20|
 |[Migadu](https://migadu.com)<br>Email service|$19|
 |[Mullvad](https://mullvad.net)<br>Privacy focused VPN|$60|
-|[NearlyFreeSpeech](https://nearlyfreespeech.net)<br>Web hosting|~$20|
-|[sourcehut](https://sourcehut.org)<br>Code forge|$20|
+|[sourcehut](https://sourcehut.org)<br>Git mirrors & mailing lists|$20|
 
 ## Work Laptop
 
@@ -21,7 +21,7 @@ I'm proud to support open source products and privacy-respecting communities. Th
   - CPU: Apple M2
   - RAM: 16GB
   - Storage: 256GB
-  - OS: MacOS Sonoma
+  - OS: MacOS Sequioa
 
 ## Personal Laptops
 
@@ -29,7 +29,7 @@ I'm proud to support open source products and privacy-respecting communities. Th
   - CPU: Intel Core i5 2540M @ 2.6 GHz
   - RAM: 16GB
   - Storage: 128GB SSD
-  - OS: OpenBSD ([see build](https://sr.ht/~bt/open-suck))
+  - OS: OpenBSD ([see build](https://git.btxx.org/open-suck))
 
 - **ThinkPad X201**
   - CPU: Intel Core i5-520M @ 2.9 GHz

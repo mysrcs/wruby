@@ -6,7 +6,7 @@ I use Firefox as my main browser (specifically the Nightly build) which has vert
 
 1. Click the **Sidebar** icon in the top left of the Safari browser
 2. Right click and group your current tab(s) (I normally name mine something uninspired like "My Tabs" or simply "Tabs")
-3. For an extra "clean look", remove the horizontal tabs by right clicking the top bar, selected **Customize Toolbar** and dragging to tabs out
+3. For an extra "clean look", remove the horizontal tabs by right clicking the top bar, selected **Customize Toolbar** and dragging the tabs out
 
 When everything is set properly, you'll have something that looks like this:
 

@@ -21,7 +21,7 @@ I'm proud to support open source products and privacy-respecting communities. Th
   - CPU: Apple M2
   - RAM: 16GB
   - Storage: 256GB
-  - OS: MacOS Sequioa
+  - OS: MacOS Sequoia
 
 ## Personal Laptops
 

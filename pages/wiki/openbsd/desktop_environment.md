@@ -5,7 +5,7 @@ This page covers the initial setup for installing and configuring `dwm` as a des
 ## Show Don't Tell
 
 <figure>
-<img src="https://btxx.org/posts/OpenBSD_is_a_Cozy_Operating_System/open-suck-75.png" alt="Screenshot of OpenBSD 7.5 running dwm">
+<img src="/public/images/open-suck-75.png" alt="Screenshot of OpenBSD 7.5 running dwm">
 <figcaption>Open Suck: OpenBSD 7.5 running dwm on my X220</figcaption>
 </figure>
  

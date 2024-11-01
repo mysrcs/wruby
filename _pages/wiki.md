@@ -1,3 +1,7 @@
+---
+title: Wiki
+---
+
 # Wiki
 
 This is the homepage for my personal wiki. All sub-directories are listed below. This wiki is a growing set of documents, so things may change often.

@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>{{ site.title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/style.css">
-  </head>
-  <body>
-    {% include header.html %}
-    {{ content }}
-    {% include footer.html %}
-  </body>
-</html>
+{% include header.html %}
+<hr>
+<h2 id="latest-posts">Latest Posts</h2>
+<ul class="posts">
+{% include archive.html %}
+</ul>
+<p><a href='/posts'>View all posts &rarr;</a></p>
+{% include footer.html %}

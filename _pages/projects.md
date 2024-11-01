@@ -1,3 +1,7 @@
+---
+title: Projects
+---
+
 # Projects
 
 This page a growing collection of active (and not-so-active) projects I am working on.

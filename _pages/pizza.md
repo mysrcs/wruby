@@ -1,3 +1,7 @@
+---
+title: Pizza
+---
+
 # Pizza
 
 This page showcases the *official* Pizza Fund (Donations). Here I list and celebrate those kind enough to donate pizza(s) into my stomach. Pizza fuels my creativity and helps me publish helpful articles and develop new open source projects.

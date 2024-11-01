@@ -5,7 +5,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="color-scheme" content="dark light">
 	<link rel="icon" href="data:,">
-	<title>{{ title }}</title>
+	{% if page.layout == "index" %}
+	<title>{{ site.title }}</title>
+	{% endif %}
+	{% if page.layout == "post" %}
+	<title>{{ post.title }}</title>
+	{% endif %}
+	{% if page.layout == "page" %}
+	<title>{{ page.title }}</title>
+	{% endif %}
+	{% if page.layout == "documentation" %}
+	<title>{{ page.title }}</title>
+	{% endif %}
 	<link href="/feed.xml" type="application/rss+xml" rel="alternate" title="RSS feed for blog posts" />
 	<link rel="stylesheet" href="/public/style.css">
 </head>

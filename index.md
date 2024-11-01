@@ -1,3 +1,6 @@
+---
+layout: index
+---
 # ~bt
 
 **Designer, developer, hardware tinkerer, open source advocate, consumer of dark roast coffee, and writer of very long sentences.**

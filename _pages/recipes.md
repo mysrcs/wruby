@@ -1,3 +1,7 @@
+---
+title: Recipes
+---
+
 # Recipes
 
 This page contains a collection of Taunt family recipes (AKA my wife's recipes)

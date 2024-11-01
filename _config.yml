@@ -5,3 +5,26 @@ author: '@mysrcs'
 
 include: ["_pages"]
 # collections: pages
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      permalink: /:title/
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: /:title/
+#  -
+#    scope:
+#      path: ""
+#      type: "docs"
+#    values:
+#      layout: "documentation"
+#      permalink: /:title/

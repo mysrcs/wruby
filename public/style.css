@@ -2,20 +2,20 @@
     box-sizing: border-box;
 }
 body {
-    font-family: "Verdana", sans-serif;
+    font-family: sans-serif;
     line-height: 1.4;
-    font-size: 13px;
+    font-size: 16px;
     margin: 0 auto;
     max-width: 470px;
     padding: 0 10px 10px;
 }
-h1{font-size:18px;margin-top:1em;}
+h1{font-size:20px;margin-top:1em;}
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-size: 15px;
+  font-size: 18px;
     margin: 2em 0 0;
 }
 blockquote {
@@ -79,12 +79,8 @@ footer {
 .footnotes {
     font-size: 90%;
 }
-@font-face {
-    font-family: 'Monaspace';
-    src: url('/public/fonts/MonaspaceKrypton-SyntaxHighlighter-Regular.woff2') format('woff2');
-}
 code {
-    font-family: "Monaspace",monospace;
+    font-family: monospace;
     background-color: #000;
     color: #f1f1f1;
     border-radius: 0.2rem;

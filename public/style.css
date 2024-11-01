@@ -81,6 +81,17 @@ footer {
 .footnotes {
     font-size: 90%;
 }
+
+
+a.footnote:before {   
+ content: "[";
+}
+
+a.footnote:after {
+    content: "]";
+}
+
+
 code {
     font-family: monospace;
     background-color: #000;
@@ -95,6 +106,8 @@ pre:has(code) {
     padding: 0.5rem;
     border-radius: 0.5rem;
 }
+
+
 a {
   color: #0033cc;
 }

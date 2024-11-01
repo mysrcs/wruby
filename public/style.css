@@ -2,6 +2,8 @@
     box-sizing: border-box;
 }
 body {
+    color: #000;
+    background-color: #eee;
     font-family: sans-serif;
     line-height: 1.4;
     font-size: 16px;
@@ -92,4 +94,19 @@ pre:has(code) {
     color: #f1f1f1;
     padding: 0.5rem;
     border-radius: 0.5rem;
+}
+a {
+  color: #0033cc;
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #eee;
+    background: #121212;
+  }
+  a {
+    color: #809fff;
+  }
 }

@@ -49,7 +49,7 @@ nav {
 nav a:last-of-type {
   float: right;
 }
-#menu,
+.menu,
 .posts {
     list-style: none;
     padding: 0;
@@ -61,7 +61,7 @@ nav a:last-of-type {
     display: block;
     font-size: 90%;
 }
-#menu li {
+.menu li {
     display: inline-block;
     margin-right: 8px;
 }

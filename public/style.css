@@ -106,6 +106,15 @@ a {
     color: #eee;
     background: #121212;
   }
+  code {
+    background-color: #f1f1f1;
+    color: #000;
+  }
+  pre:has(code) {
+    border: 2px solid #595959;
+    background-color: #f1f1f1;
+    color: #000;
+  }
   a {
     color: #809fff;
   }
